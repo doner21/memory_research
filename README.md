@@ -1,7 +1,8 @@
-# memory_research — Graphify-Brain Memory System Design
+# memory_research — Graphify-Brain Memory System for Pi
 
-> Research, architecture, implementation handoff, and user documentation for the
-> graphify-brain persistent memory extension for Pi coding agent harnesses.
+> Research, architecture, implementation handoff, **full TypeScript extension source code**,
+> and user documentation for the graphify-brain persistent memory extension.
+> Drop this into any Pi coding agent harness and run `/memory save`.
 
 ---
 
@@ -25,40 +26,44 @@ projects with the right amount of context.
 
 | IS | IS NOT |
 |----|--------|
-| Research proposals (tree, fractal, unified) | The TypeScript extension source code |
-| Unified architecture plan with 6-phase roadmap | The runtime brain data |
-| Implementation handoff with invariants and 8 verification gates | A standalone application |
-| User tutorial and test checklist | A runnable extension |
-| Knowledge-graph artifacts (86 nodes, 95 edges) | A finished product |
+| Research proposals (tree, fractal, unified) | The runtime brain data |
+| Unified architecture plan with 6-phase roadmap | A standalone application |
+| Implementation handoff with invariants and 8 verification gates | A finished product (Phase 3-6 still planned) |
+| User tutorial and test checklist | — |
+| **Full TypeScript extension source** (graphify.ts, git-checkpoint.ts) | — |
+| **Graphify skill** for Pi agent knowledge graphs | — |
+| Knowledge-graph artifacts (86 nodes, 95 edges) | — |
 | Self-contained setup guide for a fresh Pi agent | — |
 
 ---
 
-## Where the Code and Data Live
+## Where Everything Lives in Pi
 
-The graphify-brain extension **source code** (TypeScript — the actual `/memory` and
-`/memory-wiki` command implementations) lives at:
+This repo contains the **source of truth**. To install into a Pi harness:
 
-```
-~/.pi/extensions/graphify/
-```
+| Content | Repo Path | Install To |
+|---------|-----------|------------|
+| Extension source | `extensions/graphify.ts` | `~/.pi/agent/extensions/graphify.ts` |
+| Extension source | `extensions/git-checkpoint.ts` | `~/.pi/agent/extensions/git-checkpoint.ts` |
+| Extension deps | `extensions/package.json` | `~/.pi/agent/extensions/package.json` |
+| Extension deps | `extensions/package-lock.json` | `~/.pi/agent/extensions/package-lock.json` |
+| Graphify skill | `skills/graphify/SKILL.md` | `~/.pi/agent/skills/graphify/SKILL.md` |
+| Test bundle | `test/graphify-test-bundle.js` | `~/.pi/agent/graphify-test-bundle.js` |
 
-The **runtime brain data** (saved runs, archives, `brain-meta.json`) lives at:
+The **runtime brain data** (saved runs, archives, `brain-meta.json`) is created automatically at:
 
 ```
 ~/.pi/graphify-brain/
 ```
 
-Both paths are relative to the user home directory. On Windows this is typically
+All `~/.pi` paths are relative to the user home directory. On Windows this is
 `C:/Users/<username>/.pi/`.
-
-**This repo is the design/research layer.** The extension source and brain data are
-separate locations on disk. You need all three to fully reproduce the environment.
 
 ---
 
 ## File Inventory
 
+### Design Documents
 | File | Size | Description |
 |------|------|-------------|
 | `01-tree-memory-proposal.md` | ~14 KB | Tree memory proposal: hierarchical pruning, 3-level storage, Zettelkasten, Ebbinghaus decay |
@@ -67,8 +72,36 @@ separate locations on disk. You need all three to fully reproduce the environmen
 | `memory-system-improvement-handoff.md` | ~16 KB | Implementation handoff: non-negotiable invariants, 8 verification gates, Phase 2A-2H specs |
 | `TUTORIAL.md` | ~13 KB | User tutorial for `/memory` and `/memory-wiki` commands (Phase 3A) |
 | `PHASE3A_USER_TESTS.md` | ~11 KB | User test checklist: 11 test procedures for Phase 3A validation |
-| `graphify-out/` | directory | Knowledge graph artifacts for this repo: `graph.json` (86 nodes, 95 edges), `GRAPH_REPORT.md`, `graph.html`, `obsidian/` (48 auto-generated concept notes), `cache/` (semantic cache), `manifest.json`, `cost.json` |
-| `.gitignore` | <1 KB | Excludes accidental output (`NUL`), machine-local paths (`.graphify_python`), and build/editor/OS artifacts |
+
+### Extension Source (TypeScript)
+| File | Description |
+|------|-------------|
+| `extensions/graphify.ts` | **Main extension** (1682 lines, 63KB). Implements all `/memory` commands: save, load, runs, stats, prune, pin, unpin, gc, keep, and `/memory-wiki` commands. Contains HeatTracker, pruning engine, archive/restore system, context injection. |
+| `extensions/git-checkpoint.ts` | Auto-commits before Pi agent writes files — checkpoint safety for destructive edits |
+| `extensions/package.json` | npm dependencies (`@modelcontextprotocol/sdk`, `@sinclair/typebox`) |
+| `extensions/package-lock.json` | Locked dependency versions for reproducible installs |
+
+### Skills
+| File | Description |
+|------|-------------|
+| `skills/graphify/SKILL.md` | The `/graphify` skill — builds knowledge graphs from codebases. Powers the graph building that `/memory save` snapshots. |
+| `skills/graphify/.graphify_version` | Version marker for the graphify Python package |
+
+### Test
+| File | Description |
+|------|-------------|
+| `test/graphify-test-bundle.js` | Test bundle for validating graphify-brain functionality |
+
+### Knowledge Graph Artifacts
+| File | Description |
+|------|-------------|
+| `graphify-out/GRAPH_REPORT.md` | Knowledge graph report: 86 nodes, 95 edges, 17 communities |
+| `graphify-out/graph.json` | Raw graph data (node-link JSON) |
+| `graphify-out/graph.html` | Interactive graph visualization |
+| `graphify-out/obsidian/` | 48 auto-generated concept notes for Obsidian |
+| `graphify-out/manifest.json` | File manifest for incremental updates |
+| `graphify-out/cost.json` | Token usage tracker |
+| `.gitignore` | Excludes `NUL`, `.graphify_python`, `node_modules/`, OS/editor/build artifacts |
 
 ---
 
@@ -191,39 +224,71 @@ Full details in `memory-system-improvement-handoff.md`. Summary:
 
 ## Setup Guide for a Fresh Pi Agent
 
-To reproduce this environment and continue work:
-
 ### 1. Clone this repo
 ```bash
-git clone https://github.com/<user>/memory_research.git
+git clone https://github.com/doner21/memory_research.git
 cd memory_research
 ```
 
-### 2. Read the design documents in order
-- `01-tree-memory-proposal.md` — understand the tree memory paradigm (hierarchical pruning, 3-level storage)
-- `02-fractal-memory-proposal.md` — understand the fractal compression paradigm (self-similarity, archetypes)
-- `03-unified-plan.md` — see how they synthesize into a 6-phase roadmap
-- `memory-system-improvement-handoff.md` — learn invariants, verification gates, and Phase 2A-2H implementation specs
+### 2. Install the extensions into Pi
+Copy the extension files into your Pi harness:
 
-### 3. Locate the extension source
-The TypeScript implementation is at `~/.pi/extensions/graphify/`.
-Navigate there to see the actual code for `/memory` and `/memory-wiki` commands.
+**Linux/macOS:**
+```bash
+cp extensions/graphify.ts ~/.pi/agent/extensions/graphify.ts
+cp extensions/git-checkpoint.ts ~/.pi/agent/extensions/git-checkpoint.ts
+cp extensions/package.json ~/.pi/agent/extensions/package.json
+cp extensions/package-lock.json ~/.pi/agent/extensions/package-lock.json
+```
 
-### 4. Inspect the brain data
-If brain data already exists on this machine, it lives at `~/.pi/graphify-brain/`.
-Check `brain-meta.json` for the global HeatTracker and `runs/` for saved snapshots.
+**Windows (PowerShell):**
+```powershell
+Copy-Item extensions/graphify.ts $env:USERPROFILE/.pi/agent/extensions/graphify.ts
+Copy-Item extensions/git-checkpoint.ts $env:USERPROFILE/.pi/agent/extensions/git-checkpoint.ts
+Copy-Item extensions/package.json $env:USERPROFILE/.pi/agent/extensions/package.json
+Copy-Item extensions/package-lock.json $env:USERPROFILE/.pi/agent/extensions/package-lock.json
+```
 
-### 5. Continue where the project left off
+Then install npm dependencies:
+```bash
+cd ~/.pi/agent/extensions && npm install
+```
+
+### 3. Install the graphify skill
+```bash
+mkdir -p ~/.pi/agent/skills/graphify
+cp skills/graphify/SKILL.md ~/.pi/agent/skills/graphify/SKILL.md
+cp skills/graphify/.graphify_version ~/.pi/agent/skills/graphify/.graphify_version
+```
+
+### 4. Install the test bundle (optional)
+```bash
+cp test/graphify-test-bundle.js ~/.pi/agent/graphify-test-bundle.js
+```
+
+### 5. Restart Pi
+Close and reopen Pi to load the new extensions. Verify:
+```
+/memory list
+```
+
+### 6. Read the design documents in order
+- `01-tree-memory-proposal.md` — tree memory paradigm (hierarchical pruning, 3-level storage)
+- `02-fractal-memory-proposal.md` — fractal compression paradigm (self-similarity, archetypes)
+- `03-unified-plan.md` — synthesis into 6-phase roadmap
+- `memory-system-improvement-handoff.md` — invariants, verification gates, Phase 2A-2H specs
+
+### 7. Continue where the project left off
 - **Phases 1 + 2A-2H (Phase 3A)** are implemented and shipped
 - **Next priorities**: Phase 3 (Temperature tracking), Phase 4 (Fractal compression), Phase 5 (Archetypes)
 - `TUTORIAL.md` documents Phase 3A command usage with workflows
 - `PHASE3A_USER_TESTS.md` provides 11 test procedures for validation
 
-### 6. Run tests
+### 8. Run tests
 Follow `PHASE3A_USER_TESTS.md` — 11 manual test procedures validating save, load, pin, prune, gc, and keep against the 8 verification gates.
 
-### 7. Follow the invariants
-Every change must respect the 6 non-negotiable invariants above and pass the 8 verification gates. Never delete directly, always dry-run first, and preserve backward compatibility.
+### 9. Follow the invariants
+Every change must respect the 6 non-negotiable invariants above and pass the 8 verification gates.
 
 ---
 
