@@ -1,0 +1,23 @@
+# Accidental command output (do not delete from disk, only exclude from tracking)
+NUL
+
+# Machine-local graphify path marker
+.graphify_python
+
+# Python build artifacts
+__pycache__/
+*.pyc
+
+# OS-generated artifacts
+.DS_Store
+Thumbs.db
+
+# Editor artifacts
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node modules (in case any JS tooling is added)
+node_modules/

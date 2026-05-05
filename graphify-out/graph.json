@@ -1,0 +1,1983 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "prune_score_composition",
+        "label": "Prune Score Composite Formula",
+        "nodes": [
+          "prune_score_system",
+          "staleness_signal",
+          "redundancy_signal",
+          "low_signal_detection",
+          "obsoletion_scoring"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "01-tree-memory-proposal.md"
+      },
+      {
+        "id": "fractal_compression_stack",
+        "label": "Fractal Compression Algorithm Stack",
+        "nodes": [
+          "wl_color_refinement",
+          "minhash_lsh_dedup",
+          "graph_summarization_supernodes",
+          "community_detection"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "02-fractal-memory-proposal.md"
+      },
+      {
+        "id": "six_phase_roadmap",
+        "label": "Six-Phase Implementation Roadmap",
+        "nodes": [
+          "phase1_run_storage",
+          "phase2_pruning",
+          "phase3_temperature",
+          "phase4_compression",
+          "phase5_archetypes",
+          "phase6_advanced"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "03-unified-plan.md"
+      },
+      {
+        "id": "tree_fractal_synthesis",
+        "label": "Tree + Fractal Synthesis into Unified Plan",
+        "nodes": [
+          "tree_memory_proposal",
+          "fractal_memory_proposal",
+          "unified_memory_plan",
+          "tree_fractal_complementarity"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "03-unified-plan.md"
+      },
+      {
+        "id": "handoff_six_invariants",
+        "label": "Six Non-Negotiable Invariants",
+        "nodes": [
+          "handoff_never_delete_invariant",
+          "handoff_human_pin_override",
+          "handoff_dryrun_before_mutation",
+          "handoff_safe_to_inject_metadata",
+          "handoff_verified_status_field",
+          "handoff_context_priority_field"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "memory-system-improvement-handoff.md"
+      },
+      {
+        "id": "handoff_deferred_phase",
+        "label": "Deferred Phase (Do Not Build Yet)",
+        "nodes": [
+          "handoff_deferred_archetypes",
+          "handoff_deferred_wl_isomorphism",
+          "handoff_deferred_fractal_compression",
+          "handoff_deferred_auto_delete"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "memory-system-improvement-handoff.md"
+      },
+      {
+        "id": "tests_archive_restore_flow",
+        "label": "Test Archive/Restore Flow",
+        "nodes": [
+          "tests_gc_apply_check",
+          "tests_keep_restore_check",
+          "tests_pin_immunity_check"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "PHASE3A_USER_TESTS.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Tree Memory Proposal",
+      "file_type": "document",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_memory_proposal",
+      "community": 8,
+      "norm_label": "tree memory proposal"
+    },
+    {
+      "label": "3-Level Hierarchy (Root\u00e2\u2020\u2019Project\u00e2\u2020\u2019Run)",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "three_level_hierarchy",
+      "community": 1,
+      "norm_label": "3-level hierarchy (roota\u2020\u2019projecta\u2020\u2019run)"
+    },
+    {
+      "label": "Prune Score System (5 signals)",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "prune_score_system",
+      "community": 0,
+      "norm_label": "prune score system (5 signals)"
+    },
+    {
+      "label": "Staleness Signal (exponential decay)",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "staleness_signal",
+      "community": 0,
+      "norm_label": "staleness signal (exponential decay)"
+    },
+    {
+      "label": "Redundancy Detection (SimHash+Jaccard)",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "redundancy_signal",
+      "community": 0,
+      "norm_label": "redundancy detection (simhash+jaccard)"
+    },
+    {
+      "label": "Low Signal Detection",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "low_signal_detection",
+      "community": 0,
+      "norm_label": "low signal detection"
+    },
+    {
+      "label": "Obsoletion Scoring",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "obsoletion_scoring",
+      "community": 0,
+      "norm_label": "obsoletion scoring"
+    },
+    {
+      "label": "Pin/Unpin Mechanism",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "pin_mechanism",
+      "community": 0,
+      "norm_label": "pin/unpin mechanism"
+    },
+    {
+      "label": "Archive System (30-day grace period)",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "archive_system",
+      "community": 0,
+      "norm_label": "archive system (30-day grace period)"
+    },
+    {
+      "label": "Zettelkasten Linking Principle",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "zettelkasten_principle",
+      "community": 9,
+      "norm_label": "zettelkasten linking principle"
+    },
+    {
+      "label": "Ebbinghaus Forgetting Curve",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ebbinghaus_forgetting_curve",
+      "community": 0,
+      "norm_label": "ebbinghaus forgetting curve"
+    },
+    {
+      "label": "LRU Eviction Pattern",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "lru_eviction_pattern",
+      "community": 0,
+      "norm_label": "lru eviction pattern"
+    },
+    {
+      "label": "Degree Centrality Metric",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "degree_centrality_metric",
+      "community": 9,
+      "norm_label": "degree centrality metric"
+    },
+    {
+      "label": "Filesystem Layout (runs/ directory)",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "filesystem_layout_tree",
+      "community": 1,
+      "norm_label": "filesystem layout (runs/ directory)"
+    },
+    {
+      "label": "/memory Tree Commands (prune, pin, gc, keep)",
+      "file_type": "rationale",
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "memory_commands_tree",
+      "community": 0,
+      "norm_label": "/memory tree commands (prune, pin, gc, keep)"
+    },
+    {
+      "label": "Fractal Memory Proposal",
+      "file_type": "document",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fractal_memory_proposal",
+      "community": 8,
+      "norm_label": "fractal memory proposal"
+    },
+    {
+      "label": "Self-Similarity Invariant",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "self_similarity_invariant",
+      "community": 5,
+      "norm_label": "self-similarity invariant"
+    },
+    {
+      "label": "Formal Concept Analysis (FCA)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formal_concept_analysis",
+      "community": 5,
+      "norm_label": "formal concept analysis (fca)"
+    },
+    {
+      "label": "Fractal Dimension (box-covering method)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fractal_dimension_metric",
+      "community": 5,
+      "norm_label": "fractal dimension (box-covering method)"
+    },
+    {
+      "label": "Weisfeiler-Lehman Color Refinement",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wl_color_refinement",
+      "community": 5,
+      "norm_label": "weisfeiler-lehman color refinement"
+    },
+    {
+      "label": "VF2 Subgraph Isomorphism",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "vf2_isomorphism",
+      "community": 5,
+      "norm_label": "vf2 subgraph isomorphism"
+    },
+    {
+      "label": "MinHash+LSH Semantic Deduplication",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "minhash_lsh_dedup",
+      "community": 0,
+      "norm_label": "minhash+lsh semantic deduplication"
+    },
+    {
+      "label": "Graph Summarization via Supernode Aggregation",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_summarization_supernodes",
+      "community": 6,
+      "norm_label": "graph summarization via supernode aggregation"
+    },
+    {
+      "label": "Temperature System (hot/warm/cold)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "temperature_system",
+      "community": 1,
+      "norm_label": "temperature system (hot/warm/cold)"
+    },
+    {
+      "label": "Compression State Machine (raw\u00e2\u2020\u2019communities\u00e2\u2020\u2019compressed\u00e2\u2020\u2019frozen)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "compression_state_machine",
+      "community": 6,
+      "norm_label": "compression state machine (rawa\u2020\u2019communitiesa\u2020\u2019compresseda\u2020\u2019frozen)"
+    },
+    {
+      "label": "FractalNode Schema",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fractal_node_schema",
+      "community": 5,
+      "norm_label": "fractalnode schema"
+    },
+    {
+      "label": "Cross-Project Archetypes System",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "archetypes_system",
+      "community": 1,
+      "norm_label": "cross-project archetypes system"
+    },
+    {
+      "label": "Coherence Scoring (density+cohesion)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "coherence_scoring",
+      "community": 6,
+      "norm_label": "coherence scoring (density+cohesion)"
+    },
+    {
+      "label": "HeatTracker Class",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "heat_tracker_class",
+      "community": 1,
+      "norm_label": "heattracker class"
+    },
+    {
+      "label": "detectArchetypes() Function",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "detect_archetypes_function",
+      "community": 1,
+      "norm_label": "detectarchetypes() function"
+    },
+    {
+      "label": "/memory Fractal Commands (compress, expand, zoom, fuse, archetypes)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "memory_commands_fractal",
+      "community": 6,
+      "norm_label": "/memory fractal commands (compress, expand, zoom, fuse, archetypes)"
+    },
+    {
+      "label": "Community Detection (Louvain/Leiden)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "community_detection",
+      "community": 6,
+      "norm_label": "community detection (louvain/leiden)"
+    },
+    {
+      "label": "Unified Memory Management Plan",
+      "file_type": "document",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "unified_memory_plan",
+      "community": 8,
+      "norm_label": "unified memory management plan"
+    },
+    {
+      "label": "Phase 1: Run-Level Storage (MVP)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase1_run_storage",
+      "community": 1,
+      "norm_label": "phase 1: run-level storage (mvp)"
+    },
+    {
+      "label": "Phase 2: Pruning Infrastructure",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase2_pruning",
+      "community": 0,
+      "norm_label": "phase 2: pruning infrastructure"
+    },
+    {
+      "label": "Phase 3: Temperature Tracking",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase3_temperature",
+      "community": 1,
+      "norm_label": "phase 3: temperature tracking"
+    },
+    {
+      "label": "Phase 4: Fractal Compression",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase4_compression",
+      "community": 6,
+      "norm_label": "phase 4: fractal compression"
+    },
+    {
+      "label": "Phase 5: Archetypes Detection",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase5_archetypes",
+      "community": 1,
+      "norm_label": "phase 5: archetypes detection"
+    },
+    {
+      "label": "Phase 6: Advanced (WL isomorphism, semantic search)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase6_advanced",
+      "community": 5,
+      "norm_label": "phase 6: advanced (wl isomorphism, semantic search)"
+    },
+    {
+      "label": "Tree-Fractal Complementarity Principle",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_fractal_complementarity",
+      "community": 8,
+      "norm_label": "tree-fractal complementarity principle"
+    },
+    {
+      "label": "Conflict Resolution Decisions",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "conflict_resolution_decisions",
+      "community": 1,
+      "norm_label": "conflict resolution decisions"
+    },
+    {
+      "label": "graphify.ts Code Changes",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_ts_changes",
+      "community": 1,
+      "norm_label": "graphify.ts code changes"
+    },
+    {
+      "label": "brain-meta.json Schema",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "brain_meta_json_schema",
+      "community": 1,
+      "norm_label": "brain-meta.json schema"
+    },
+    {
+      "label": "Memory System Improvement Handoff",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_memory_handoff",
+      "community": 2,
+      "norm_label": "memory system improvement handoff"
+    },
+    {
+      "label": "Run Metadata Hardening (Phase 2A)",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_metadata_hardening",
+      "community": 7,
+      "norm_label": "run metadata hardening (phase 2a)"
+    },
+    {
+      "label": "Access & Heat Tracking (Phase 2B)",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_heat_tracking",
+      "community": 2,
+      "norm_label": "access & heat tracking (phase 2b)"
+    },
+    {
+      "label": "/memory stats Enhancement (Phase 2C)",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_memory_stats",
+      "community": 10,
+      "norm_label": "/memory stats enhancement (phase 2c)"
+    },
+    {
+      "label": "Pinning System (Phase 2D)",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_pinning",
+      "community": 2,
+      "norm_label": "pinning system (phase 2d)"
+    },
+    {
+      "label": "Dry-Run Pruning (Phase 2E)",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_dryrun_prune",
+      "community": 3,
+      "norm_label": "dry-run pruning (phase 2e)"
+    },
+    {
+      "label": "Archive & GC System (Phase 2F)",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_archive_gc",
+      "community": 2,
+      "norm_label": "archive & gc system (phase 2f)"
+    },
+    {
+      "label": "Context Injection Policy (Phase 2G)",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_context_injection",
+      "community": 2,
+      "norm_label": "context injection policy (phase 2g)"
+    },
+    {
+      "label": "Verifier-Aware Memory (Phase 2H)",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_verifier_memory",
+      "community": 4,
+      "norm_label": "verifier-aware memory (phase 2h)"
+    },
+    {
+      "label": "Never Delete Memory Directly Invariant",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_never_delete_invariant",
+      "community": 2,
+      "norm_label": "never delete memory directly invariant"
+    },
+    {
+      "label": "Human Pin Overrides Auto Pruning Invariant",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_human_pin_override",
+      "community": 3,
+      "norm_label": "human pin overrides auto pruning invariant"
+    },
+    {
+      "label": "Dry-Run Before Mutation Invariant",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_dryrun_before_mutation",
+      "community": 3,
+      "norm_label": "dry-run before mutation invariant"
+    },
+    {
+      "label": "safeToInject Metadata Field",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_safe_to_inject_metadata",
+      "community": 7,
+      "norm_label": "safetoinject metadata field"
+    },
+    {
+      "label": "verifiedStatus Metadata Field",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_verified_status_field",
+      "community": 7,
+      "norm_label": "verifiedstatus metadata field"
+    },
+    {
+      "label": "contextPriority Metadata Field",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_context_priority_field",
+      "community": 7,
+      "norm_label": "contextpriority metadata field"
+    },
+    {
+      "label": "failureSignatures Metadata Field",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_failure_signatures_field",
+      "community": 7,
+      "norm_label": "failuresignatures metadata field"
+    },
+    {
+      "label": "Role-Specific Context Selection",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_role_specific_context",
+      "community": 2,
+      "norm_label": "role-specific context selection"
+    },
+    {
+      "label": "selectMemoryForContext() Function",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_select_memory_function",
+      "community": 2,
+      "norm_label": "selectmemoryforcontext() function"
+    },
+    {
+      "label": "Archive Metadata Schema",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_archive_metadata",
+      "community": 2,
+      "norm_label": "archive metadata schema"
+    },
+    {
+      "label": "Keep/Restore Run Behavior",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_keep_restore_behavior",
+      "community": 3,
+      "norm_label": "keep/restore run behavior"
+    },
+    {
+      "label": "Deferred: Archetype Detection",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_deferred_archetypes",
+      "community": 4,
+      "norm_label": "deferred: archetype detection"
+    },
+    {
+      "label": "Deferred: WL Graph Isomorphism",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_deferred_wl_isomorphism",
+      "community": 11,
+      "norm_label": "deferred: wl graph isomorphism"
+    },
+    {
+      "label": "Deferred: Full Fractal Compression",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_deferred_fractal_compression",
+      "community": 4,
+      "norm_label": "deferred: full fractal compression"
+    },
+    {
+      "label": "Deferred: Automatic Deletion",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_deferred_auto_delete",
+      "community": 12,
+      "norm_label": "deferred: automatic deletion"
+    },
+    {
+      "label": "8 Verification Gates",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_verification_gates",
+      "community": 2,
+      "norm_label": "8 verification gates"
+    },
+    {
+      "label": "5 Likely Failure Modes",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_failure_modes",
+      "community": 13,
+      "norm_label": "5 likely failure modes"
+    },
+    {
+      "label": "Memory Metabolism Loop (save->access->heat->pin->score->archive->restore->inject)",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "handoff_memory_metabolism_loop",
+      "community": 2,
+      "norm_label": "memory metabolism loop (save->access->heat->pin->score->archive->restore->inject)"
+    },
+    {
+      "label": "Phase 3A User Test Checklist",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_user_checklist",
+      "community": 3,
+      "norm_label": "phase 3a user test checklist"
+    },
+    {
+      "label": "Disposable Project Safety Warning",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_disposable_project_warning",
+      "community": 3,
+      "norm_label": "disposable project safety warning"
+    },
+    {
+      "label": "Test: /memory save Verification",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_save_check",
+      "community": 14,
+      "norm_label": "test: /memory save verification"
+    },
+    {
+      "label": "Test: Dry-Run Does Not Mutate Files",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_dryrun_safety_check",
+      "community": 3,
+      "norm_label": "test: dry-run does not mutate files"
+    },
+    {
+      "label": "Test: Pinned Run GC Immunity",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_pin_immunity_check",
+      "community": 3,
+      "norm_label": "test: pinned run gc immunity"
+    },
+    {
+      "label": "Test: GC Apply Full Archive",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_gc_apply_check",
+      "community": 3,
+      "norm_label": "test: gc apply full archive"
+    },
+    {
+      "label": "Test: Keep Restores Full Artifacts",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_keep_restore_check",
+      "community": 3,
+      "norm_label": "test: keep restores full artifacts"
+    },
+    {
+      "label": "Test: Load/LoadRun Access Tracking",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_access_tracking_check",
+      "community": 3,
+      "norm_label": "test: load/loadrun access tracking"
+    },
+    {
+      "label": "Rollback & Recovery Section",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "tests_rollback_recovery",
+      "community": 15,
+      "norm_label": "rollback & recovery section"
+    },
+    {
+      "label": "Phase 3A Tutorial Documentation",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "tutorial_phase3a_documentation",
+      "community": 4,
+      "norm_label": "phase 3a tutorial documentation"
+    },
+    {
+      "label": "Updated Command Grammar (project-scoped)",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "tutorial_command_grammar_update",
+      "community": 16,
+      "norm_label": "updated command grammar (project-scoped)"
+    },
+    {
+      "label": "Dry-Run-First Behavior Documentation",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "tutorial_dryrun_first_behavior",
+      "community": 4,
+      "norm_label": "dry-run-first behavior documentation"
+    },
+    {
+      "label": "GC Apply Full Archive Docs",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "tutorial_gc_apply_docs",
+      "community": 4,
+      "norm_label": "gc apply full archive docs"
+    },
+    {
+      "label": "Keep Restore Full Artifact Docs",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "tutorial_keep_restore_docs",
+      "community": 4,
+      "norm_label": "keep restore full artifact docs"
+    },
+    {
+      "label": "Internal Context Selection Helper Note",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "tutorial_context_selection_internal",
+      "community": 4,
+      "norm_label": "internal context selection helper note"
+    },
+    {
+      "label": "Not Implemented Section (fractal/archetypes excluded)",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "tutorial_not_implemented_section",
+      "community": 4,
+      "norm_label": "not implemented section (fractal/archetypes excluded)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "synthesizes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "unified_memory_plan",
+      "target": "tree_memory_proposal"
+    },
+    {
+      "relation": "defines_layer_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tree_fractal_complementarity",
+      "target": "tree_memory_proposal"
+    },
+    {
+      "relation": "implemented_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "three_level_hierarchy",
+      "target": "filesystem_layout_tree"
+    },
+    {
+      "relation": "incorporates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prune_score_system",
+      "target": "staleness_signal"
+    },
+    {
+      "relation": "incorporates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prune_score_system",
+      "target": "redundancy_signal"
+    },
+    {
+      "relation": "incorporates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prune_score_system",
+      "target": "low_signal_detection"
+    },
+    {
+      "relation": "incorporates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prune_score_system",
+      "target": "obsoletion_scoring"
+    },
+    {
+      "relation": "overrides",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pin_mechanism",
+      "target": "prune_score_system"
+    },
+    {
+      "relation": "receives_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "archive_system",
+      "target": "prune_score_system"
+    },
+    {
+      "relation": "exposes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_commands_tree",
+      "target": "prune_score_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase2_pruning",
+      "target": "prune_score_system"
+    },
+    {
+      "relation": "inspires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ebbinghaus_forgetting_curve",
+      "target": "staleness_signal"
+    },
+    {
+      "relation": "inspires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lru_eviction_pattern",
+      "target": "staleness_signal"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "minhash_lsh_dedup",
+      "target": "redundancy_signal"
+    },
+    {
+      "relation": "exposes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_commands_tree",
+      "target": "pin_mechanism"
+    },
+    {
+      "relation": "retains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "conflict_resolution_decisions",
+      "target": "pin_mechanism"
+    },
+    {
+      "relation": "exposes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_commands_tree",
+      "target": "archive_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase2_pruning",
+      "target": "archive_system"
+    },
+    {
+      "relation": "motivates",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "01-tree-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "zettelkasten_principle",
+      "target": "degree_centrality_metric"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase1_run_storage",
+      "target": "filesystem_layout_tree"
+    },
+    {
+      "relation": "selects",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "conflict_resolution_decisions",
+      "target": "filesystem_layout_tree"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_commands_tree",
+      "target": "memory_commands_fractal"
+    },
+    {
+      "relation": "synthesizes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "unified_memory_plan",
+      "target": "fractal_memory_proposal"
+    },
+    {
+      "relation": "defines_layer_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tree_fractal_complementarity",
+      "target": "fractal_memory_proposal"
+    },
+    {
+      "relation": "validates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "wl_color_refinement",
+      "target": "self_similarity_invariant"
+    },
+    {
+      "relation": "provides_backbone_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formal_concept_analysis",
+      "target": "self_similarity_invariant"
+    },
+    {
+      "relation": "quantifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "fractal_dimension_metric",
+      "target": "self_similarity_invariant"
+    },
+    {
+      "relation": "encodes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "fractal_node_schema",
+      "target": "self_similarity_invariant"
+    },
+    {
+      "relation": "confirms",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "vf2_isomorphism",
+      "target": "wl_color_refinement"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "archetypes_system",
+      "target": "wl_color_refinement"
+    },
+    {
+      "relation": "defers_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase6_advanced",
+      "target": "wl_color_refinement"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "archetypes_system",
+      "target": "minhash_lsh_dedup"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graph_summarization_supernodes",
+      "target": "community_detection"
+    },
+    {
+      "relation": "drives",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graph_summarization_supernodes",
+      "target": "compression_state_machine"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase4_compression",
+      "target": "graph_summarization_supernodes"
+    },
+    {
+      "relation": "controls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "temperature_system",
+      "target": "compression_state_machine"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "heat_tracker_class",
+      "target": "temperature_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase3_temperature",
+      "target": "temperature_system"
+    },
+    {
+      "relation": "adopts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "conflict_resolution_decisions",
+      "target": "temperature_system"
+    },
+    {
+      "relation": "determines_candidacy_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "coherence_scoring",
+      "target": "compression_state_machine"
+    },
+    {
+      "relation": "exposes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_commands_fractal",
+      "target": "compression_state_machine"
+    },
+    {
+      "relation": "populates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "detect_archetypes_function",
+      "target": "archetypes_system"
+    },
+    {
+      "relation": "exposes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "memory_commands_fractal",
+      "target": "archetypes_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase5_archetypes",
+      "target": "archetypes_system"
+    },
+    {
+      "relation": "adopts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "conflict_resolution_decisions",
+      "target": "archetypes_system"
+    },
+    {
+      "relation": "stores",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "brain_meta_json_schema",
+      "target": "archetypes_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase3_temperature",
+      "target": "heat_tracker_class"
+    },
+    {
+      "relation": "stores",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "brain_meta_json_schema",
+      "target": "heat_tracker_class"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase4_compression",
+      "target": "community_detection"
+    },
+    {
+      "relation": "establishes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "unified_memory_plan",
+      "target": "tree_fractal_complementarity"
+    },
+    {
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase1_run_storage",
+      "target": "graphify_ts_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_handoff",
+      "target": "handoff_metadata_hardening"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_handoff",
+      "target": "handoff_heat_tracking"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_handoff",
+      "target": "handoff_pinning"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_handoff",
+      "target": "handoff_dryrun_prune"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_handoff",
+      "target": "handoff_archive_gc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_handoff",
+      "target": "handoff_context_injection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_handoff",
+      "target": "handoff_verifier_memory"
+    },
+    {
+      "relation": "defines_field",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_metadata_hardening",
+      "target": "handoff_safe_to_inject_metadata"
+    },
+    {
+      "relation": "defines_field",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_metadata_hardening",
+      "target": "handoff_verified_status_field"
+    },
+    {
+      "relation": "defines_field",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_metadata_hardening",
+      "target": "handoff_context_priority_field"
+    },
+    {
+      "relation": "defines_field",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_metadata_hardening",
+      "target": "handoff_failure_signatures_field"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_metabolism_loop",
+      "target": "handoff_heat_tracking"
+    },
+    {
+      "relation": "implements_invariant",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_pinning",
+      "target": "handoff_human_pin_override"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_metabolism_loop",
+      "target": "handoff_pinning"
+    },
+    {
+      "relation": "verifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_verification_gates",
+      "target": "handoff_pinning"
+    },
+    {
+      "relation": "implements_invariant",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_dryrun_prune",
+      "target": "handoff_dryrun_before_mutation"
+    },
+    {
+      "relation": "specifies_schema",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_archive_gc",
+      "target": "handoff_archive_metadata"
+    },
+    {
+      "relation": "specifies_behavior",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_archive_gc",
+      "target": "handoff_keep_restore_behavior"
+    },
+    {
+      "relation": "implements_invariant",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_archive_gc",
+      "target": "handoff_never_delete_invariant"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_memory_metabolism_loop",
+      "target": "handoff_archive_gc"
+    },
+    {
+      "relation": "verifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_verification_gates",
+      "target": "handoff_archive_gc"
+    },
+    {
+      "relation": "validates",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_gc_apply_check",
+      "target": "handoff_archive_gc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_context_injection",
+      "target": "handoff_role_specific_context"
+    },
+    {
+      "relation": "specifies_api",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_context_injection",
+      "target": "handoff_select_memory_function"
+    },
+    {
+      "relation": "prerequisite_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_deferred_archetypes",
+      "target": "handoff_context_injection"
+    },
+    {
+      "relation": "verifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_verification_gates",
+      "target": "handoff_context_injection"
+    },
+    {
+      "relation": "prerequisite_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "handoff_deferred_fractal_compression",
+      "target": "handoff_verifier_memory"
+    },
+    {
+      "relation": "validates_invariant",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_pin_immunity_check",
+      "target": "handoff_human_pin_override"
+    },
+    {
+      "relation": "validates_invariant",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_dryrun_safety_check",
+      "target": "handoff_dryrun_before_mutation"
+    },
+    {
+      "relation": "validates",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_keep_restore_check",
+      "target": "handoff_keep_restore_behavior"
+    },
+    {
+      "relation": "acknowledges",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_not_implemented_section",
+      "target": "handoff_deferred_archetypes"
+    },
+    {
+      "relation": "acknowledges",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_not_implemented_section",
+      "target": "handoff_deferred_fractal_compression"
+    },
+    {
+      "relation": "documents",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_phase3a_documentation",
+      "target": "handoff_memory_metabolism_loop"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_user_checklist",
+      "target": "tests_dryrun_safety_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_user_checklist",
+      "target": "tests_pin_immunity_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_user_checklist",
+      "target": "tests_gc_apply_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_user_checklist",
+      "target": "tests_keep_restore_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_user_checklist",
+      "target": "tests_access_tracking_check"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "tests_user_checklist",
+      "target": "tests_disposable_project_warning"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_phase3a_documentation",
+      "target": "tutorial_dryrun_first_behavior"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_phase3a_documentation",
+      "target": "tutorial_gc_apply_docs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_phase3a_documentation",
+      "target": "tutorial_keep_restore_docs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_phase3a_documentation",
+      "target": "tutorial_not_implemented_section"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "tutorial_phase3a_documentation",
+      "target": "tutorial_context_selection_internal"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "prune_score_composition",
+      "label": "Prune Score Composite Formula",
+      "nodes": [
+        "prune_score_system",
+        "staleness_signal",
+        "redundancy_signal",
+        "low_signal_detection",
+        "obsoletion_scoring"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md"
+    },
+    {
+      "id": "fractal_compression_stack",
+      "label": "Fractal Compression Algorithm Stack",
+      "nodes": [
+        "wl_color_refinement",
+        "minhash_lsh_dedup",
+        "graph_summarization_supernodes",
+        "community_detection"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md"
+    },
+    {
+      "id": "six_phase_roadmap",
+      "label": "Six-Phase Implementation Roadmap",
+      "nodes": [
+        "phase1_run_storage",
+        "phase2_pruning",
+        "phase3_temperature",
+        "phase4_compression",
+        "phase5_archetypes",
+        "phase6_advanced"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md"
+    },
+    {
+      "id": "tree_fractal_synthesis",
+      "label": "Tree + Fractal Synthesis into Unified Plan",
+      "nodes": [
+        "tree_memory_proposal",
+        "fractal_memory_proposal",
+        "unified_memory_plan",
+        "tree_fractal_complementarity"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md"
+    },
+    {
+      "id": "handoff_six_invariants",
+      "label": "Six Non-Negotiable Invariants",
+      "nodes": [
+        "handoff_never_delete_invariant",
+        "handoff_human_pin_override",
+        "handoff_dryrun_before_mutation",
+        "handoff_safe_to_inject_metadata",
+        "handoff_verified_status_field",
+        "handoff_context_priority_field"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md"
+    },
+    {
+      "id": "handoff_deferred_phase",
+      "label": "Deferred Phase (Do Not Build Yet)",
+      "nodes": [
+        "handoff_deferred_archetypes",
+        "handoff_deferred_wl_isomorphism",
+        "handoff_deferred_fractal_compression",
+        "handoff_deferred_auto_delete"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md"
+    },
+    {
+      "id": "tests_archive_restore_flow",
+      "label": "Test Archive/Restore Flow",
+      "nodes": [
+        "tests_gc_apply_check",
+        "tests_keep_restore_check",
+        "tests_pin_immunity_check"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md"
+    }
+  ]
+}

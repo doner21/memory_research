@@ -1,0 +1,789 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Pruning & Score System",
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_memory_commands_fractal",
+      "type": "file",
+      "file": "memory Fractal Commands (compress, expand, zoom, fuse, archetypes).md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_memory_commands_tree",
+      "type": "file",
+      "file": "memory Tree Commands (prune, pin, gc, keep).md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_archive_system",
+      "type": "file",
+      "file": "Archive System (30-day grace period).md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_low_signal_detection",
+      "type": "file",
+      "file": "Low Signal Detection.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_obsoletion_scoring",
+      "type": "file",
+      "file": "Obsoletion Scoring.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_phase2_pruning",
+      "type": "file",
+      "file": "Phase 2 Pruning Infrastructure.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prune_score_system",
+      "type": "file",
+      "file": "Prune Score System (5 signals).md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Archetypes & Temperature Tracking",
+      "x": 740,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_formal_concept_analysis",
+      "type": "file",
+      "file": "Formal Concept Analysis (FCA).md",
+      "x": 760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_fractal_dimension_metric",
+      "type": "file",
+      "file": "Fractal Dimension (box-covering method).md",
+      "x": 960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_fractal_node_schema",
+      "type": "file",
+      "file": "FractalNode Schema.md",
+      "x": 1160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_phase6_advanced",
+      "type": "file",
+      "file": "Phase 6 Advanced (WL isomorphism, semantic search).md",
+      "x": 760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_self_similarity_invariant",
+      "type": "file",
+      "file": "Self-Similarity Invariant.md",
+      "x": 960,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vf2_isomorphism",
+      "type": "file",
+      "file": "VF2 Subgraph Isomorphism.md",
+      "x": 1160,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_wl_color_refinement",
+      "type": "file",
+      "file": "Weisfeiler-Lehman Color Refinement.md",
+      "x": 760,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Run Storage & Filesystem",
+      "x": 1480,
+      "y": 0,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_three_level_hierarchy",
+      "type": "file",
+      "file": "3-Level Hierarchy (Root\u00e2\u2020\u2019Project\u00e2\u2020\u2019Run).md",
+      "x": 1500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_conflict_resolution_decisions",
+      "type": "file",
+      "file": "Conflict Resolution Decisions.md",
+      "x": 1700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_filesystem_layout_tree",
+      "type": "file",
+      "file": "Filesystem Layout (runs directory).md",
+      "x": 1900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_phase1_run_storage",
+      "type": "file",
+      "file": "Phase 1 Run-Level Storage (MVP).md",
+      "x": 1500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pin_mechanism",
+      "type": "file",
+      "file": "PinUnpin Mechanism.md",
+      "x": 1700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_ts_changes",
+      "type": "file",
+      "file": "graphify.ts Code Changes.md",
+      "x": 1900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Graph Isomorphism & Fractal Math",
+      "x": 0,
+      "y": 500,
+      "width": 660,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_archetypes_system",
+      "type": "file",
+      "file": "Cross-Project Archetypes System.md",
+      "x": 20,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_minhash_lsh_dedup",
+      "type": "file",
+      "file": "MinHash+LSH Semantic Deduplication.md",
+      "x": 220,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_phase5_archetypes",
+      "type": "file",
+      "file": "Phase 5 Archetypes Detection.md",
+      "x": 420,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redundancy_signal",
+      "type": "file",
+      "file": "Redundancy Detection (SimHash+Jaccard).md",
+      "x": 20,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_brain_meta_json_schema",
+      "type": "file",
+      "file": "brain-meta.json Schema.md",
+      "x": 220,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_detect_archetypes_function",
+      "type": "file",
+      "file": "detectArchetypes() Function.md",
+      "x": 420,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Compression & Communities",
+      "x": 740,
+      "y": 500,
+      "width": 660,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_coherence_scoring",
+      "type": "file",
+      "file": "Coherence Scoring (density+cohesion).md",
+      "x": 760,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_community_detection",
+      "type": "file",
+      "file": "Community Detection (LouvainLeiden).md",
+      "x": 960,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_compression_state_machine",
+      "type": "file",
+      "file": "Compression State Machine (raw\u00e2\u2020\u2019communities\u00e2\u2020\u2019compressed\u00e2\u2020\u2019frozen).md",
+      "x": 1160,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graph_summarization_supernodes",
+      "type": "file",
+      "file": "Graph Summarization via Supernode Aggregation.md",
+      "x": 760,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_phase4_compression",
+      "type": "file",
+      "file": "Phase 4 Fractal Compression.md",
+      "x": 960,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Core Proposals & Synthesis",
+      "x": 1480,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_fractal_memory_proposal",
+      "type": "file",
+      "file": "Fractal Memory Proposal.md",
+      "x": 1500,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tree_memory_proposal",
+      "type": "file",
+      "file": "Tree Memory Proposal.md",
+      "x": 1700,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tree_fractal_complementarity",
+      "type": "file",
+      "file": "Tree-Fractal Complementarity Principle.md",
+      "x": 1900,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_unified_memory_plan",
+      "type": "file",
+      "file": "Unified Memory Management Plan.md",
+      "x": 1500,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Temporal Decay Foundations",
+      "x": 0,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_ebbinghaus_forgetting_curve",
+      "type": "file",
+      "file": "Ebbinghaus Forgetting Curve.md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lru_eviction_pattern",
+      "type": "file",
+      "file": "LRU Eviction Pattern.md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_staleness_signal",
+      "type": "file",
+      "file": "Staleness Signal (exponential decay).md",
+      "x": 420,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Knowledge Curation Principles",
+      "x": 740,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_heat_tracker_class",
+      "type": "file",
+      "file": "HeatTracker Class.md",
+      "x": 760,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_phase3_temperature",
+      "type": "file",
+      "file": "Phase 3 Temperature Tracking.md",
+      "x": 960,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_temperature_system",
+      "type": "file",
+      "file": "Temperature System (hotwarmcold).md",
+      "x": 1160,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Community 8",
+      "x": 1480,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_degree_centrality_metric",
+      "type": "file",
+      "file": "Degree Centrality Metric.md",
+      "x": 1500,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_zettelkasten_principle",
+      "type": "file",
+      "file": "Zettelkasten Linking Principle.md",
+      "x": 1700,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_tree_memory_proposal_unified_memory_plan",
+      "fromNode": "n_tree_memory_proposal",
+      "toNode": "n_unified_memory_plan",
+      "label": "synthesizes [EXTRACTED]"
+    },
+    {
+      "id": "e_tree_memory_proposal_tree_fractal_complementarity",
+      "fromNode": "n_tree_memory_proposal",
+      "toNode": "n_tree_fractal_complementarity",
+      "label": "defines_layer_for [INFERRED]"
+    },
+    {
+      "id": "e_three_level_hierarchy_filesystem_layout_tree",
+      "fromNode": "n_three_level_hierarchy",
+      "toNode": "n_filesystem_layout_tree",
+      "label": "implemented_by [EXTRACTED]"
+    },
+    {
+      "id": "e_prune_score_system_staleness_signal",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_staleness_signal",
+      "label": "incorporates [EXTRACTED]"
+    },
+    {
+      "id": "e_prune_score_system_redundancy_signal",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_redundancy_signal",
+      "label": "incorporates [EXTRACTED]"
+    },
+    {
+      "id": "e_prune_score_system_low_signal_detection",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_low_signal_detection",
+      "label": "incorporates [EXTRACTED]"
+    },
+    {
+      "id": "e_prune_score_system_obsoletion_scoring",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_obsoletion_scoring",
+      "label": "incorporates [EXTRACTED]"
+    },
+    {
+      "id": "e_prune_score_system_pin_mechanism",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_pin_mechanism",
+      "label": "overrides [EXTRACTED]"
+    },
+    {
+      "id": "e_prune_score_system_archive_system",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_archive_system",
+      "label": "receives_from [EXTRACTED]"
+    },
+    {
+      "id": "e_prune_score_system_memory_commands_tree",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_memory_commands_tree",
+      "label": "exposes [INFERRED]"
+    },
+    {
+      "id": "e_prune_score_system_phase2_pruning",
+      "fromNode": "n_prune_score_system",
+      "toNode": "n_phase2_pruning",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_staleness_signal_ebbinghaus_forgetting_curve",
+      "fromNode": "n_staleness_signal",
+      "toNode": "n_ebbinghaus_forgetting_curve",
+      "label": "inspires [EXTRACTED]"
+    },
+    {
+      "id": "e_staleness_signal_lru_eviction_pattern",
+      "fromNode": "n_staleness_signal",
+      "toNode": "n_lru_eviction_pattern",
+      "label": "inspires [EXTRACTED]"
+    },
+    {
+      "id": "e_redundancy_signal_minhash_lsh_dedup",
+      "fromNode": "n_redundancy_signal",
+      "toNode": "n_minhash_lsh_dedup",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_pin_mechanism_memory_commands_tree",
+      "fromNode": "n_pin_mechanism",
+      "toNode": "n_memory_commands_tree",
+      "label": "exposes [INFERRED]"
+    },
+    {
+      "id": "e_pin_mechanism_conflict_resolution_decisions",
+      "fromNode": "n_pin_mechanism",
+      "toNode": "n_conflict_resolution_decisions",
+      "label": "retains [EXTRACTED]"
+    },
+    {
+      "id": "e_archive_system_memory_commands_tree",
+      "fromNode": "n_archive_system",
+      "toNode": "n_memory_commands_tree",
+      "label": "exposes [INFERRED]"
+    },
+    {
+      "id": "e_archive_system_phase2_pruning",
+      "fromNode": "n_archive_system",
+      "toNode": "n_phase2_pruning",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_zettelkasten_principle_degree_centrality_metric",
+      "fromNode": "n_zettelkasten_principle",
+      "toNode": "n_degree_centrality_metric",
+      "label": "motivates [INFERRED]"
+    },
+    {
+      "id": "e_filesystem_layout_tree_phase1_run_storage",
+      "fromNode": "n_filesystem_layout_tree",
+      "toNode": "n_phase1_run_storage",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_filesystem_layout_tree_conflict_resolution_decisions",
+      "fromNode": "n_filesystem_layout_tree",
+      "toNode": "n_conflict_resolution_decisions",
+      "label": "selects [EXTRACTED]"
+    },
+    {
+      "id": "e_memory_commands_tree_memory_commands_fractal",
+      "fromNode": "n_memory_commands_tree",
+      "toNode": "n_memory_commands_fractal",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_fractal_memory_proposal_unified_memory_plan",
+      "fromNode": "n_fractal_memory_proposal",
+      "toNode": "n_unified_memory_plan",
+      "label": "synthesizes [EXTRACTED]"
+    },
+    {
+      "id": "e_fractal_memory_proposal_tree_fractal_complementarity",
+      "fromNode": "n_fractal_memory_proposal",
+      "toNode": "n_tree_fractal_complementarity",
+      "label": "defines_layer_for [INFERRED]"
+    },
+    {
+      "id": "e_self_similarity_invariant_wl_color_refinement",
+      "fromNode": "n_self_similarity_invariant",
+      "toNode": "n_wl_color_refinement",
+      "label": "validates [EXTRACTED]"
+    },
+    {
+      "id": "e_self_similarity_invariant_formal_concept_analysis",
+      "fromNode": "n_self_similarity_invariant",
+      "toNode": "n_formal_concept_analysis",
+      "label": "provides_backbone_for [EXTRACTED]"
+    },
+    {
+      "id": "e_self_similarity_invariant_fractal_dimension_metric",
+      "fromNode": "n_self_similarity_invariant",
+      "toNode": "n_fractal_dimension_metric",
+      "label": "quantifies [EXTRACTED]"
+    },
+    {
+      "id": "e_self_similarity_invariant_fractal_node_schema",
+      "fromNode": "n_self_similarity_invariant",
+      "toNode": "n_fractal_node_schema",
+      "label": "encodes [EXTRACTED]"
+    },
+    {
+      "id": "e_wl_color_refinement_vf2_isomorphism",
+      "fromNode": "n_wl_color_refinement",
+      "toNode": "n_vf2_isomorphism",
+      "label": "confirms [EXTRACTED]"
+    },
+    {
+      "id": "e_wl_color_refinement_archetypes_system",
+      "fromNode": "n_wl_color_refinement",
+      "toNode": "n_archetypes_system",
+      "label": "uses [EXTRACTED]"
+    },
+    {
+      "id": "e_wl_color_refinement_phase6_advanced",
+      "fromNode": "n_wl_color_refinement",
+      "toNode": "n_phase6_advanced",
+      "label": "defers_to [EXTRACTED]"
+    },
+    {
+      "id": "e_minhash_lsh_dedup_archetypes_system",
+      "fromNode": "n_minhash_lsh_dedup",
+      "toNode": "n_archetypes_system",
+      "label": "uses [EXTRACTED]"
+    },
+    {
+      "id": "e_graph_summarization_supernodes_community_detection",
+      "fromNode": "n_graph_summarization_supernodes",
+      "toNode": "n_community_detection",
+      "label": "uses [EXTRACTED]"
+    },
+    {
+      "id": "e_graph_summarization_supernodes_compression_state_machine",
+      "fromNode": "n_graph_summarization_supernodes",
+      "toNode": "n_compression_state_machine",
+      "label": "drives [EXTRACTED]"
+    },
+    {
+      "id": "e_graph_summarization_supernodes_phase4_compression",
+      "fromNode": "n_graph_summarization_supernodes",
+      "toNode": "n_phase4_compression",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_temperature_system_compression_state_machine",
+      "fromNode": "n_temperature_system",
+      "toNode": "n_compression_state_machine",
+      "label": "controls [EXTRACTED]"
+    },
+    {
+      "id": "e_temperature_system_heat_tracker_class",
+      "fromNode": "n_temperature_system",
+      "toNode": "n_heat_tracker_class",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_temperature_system_phase3_temperature",
+      "fromNode": "n_temperature_system",
+      "toNode": "n_phase3_temperature",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_temperature_system_conflict_resolution_decisions",
+      "fromNode": "n_temperature_system",
+      "toNode": "n_conflict_resolution_decisions",
+      "label": "adopts [EXTRACTED]"
+    },
+    {
+      "id": "e_compression_state_machine_coherence_scoring",
+      "fromNode": "n_compression_state_machine",
+      "toNode": "n_coherence_scoring",
+      "label": "determines_candidacy_for [EXTRACTED]"
+    },
+    {
+      "id": "e_compression_state_machine_memory_commands_fractal",
+      "fromNode": "n_compression_state_machine",
+      "toNode": "n_memory_commands_fractal",
+      "label": "exposes [INFERRED]"
+    },
+    {
+      "id": "e_archetypes_system_detect_archetypes_function",
+      "fromNode": "n_archetypes_system",
+      "toNode": "n_detect_archetypes_function",
+      "label": "populates [EXTRACTED]"
+    },
+    {
+      "id": "e_archetypes_system_memory_commands_fractal",
+      "fromNode": "n_archetypes_system",
+      "toNode": "n_memory_commands_fractal",
+      "label": "exposes [INFERRED]"
+    },
+    {
+      "id": "e_archetypes_system_phase5_archetypes",
+      "fromNode": "n_archetypes_system",
+      "toNode": "n_phase5_archetypes",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_archetypes_system_conflict_resolution_decisions",
+      "fromNode": "n_archetypes_system",
+      "toNode": "n_conflict_resolution_decisions",
+      "label": "adopts [EXTRACTED]"
+    },
+    {
+      "id": "e_archetypes_system_brain_meta_json_schema",
+      "fromNode": "n_archetypes_system",
+      "toNode": "n_brain_meta_json_schema",
+      "label": "stores [EXTRACTED]"
+    },
+    {
+      "id": "e_heat_tracker_class_phase3_temperature",
+      "fromNode": "n_heat_tracker_class",
+      "toNode": "n_phase3_temperature",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_heat_tracker_class_brain_meta_json_schema",
+      "fromNode": "n_heat_tracker_class",
+      "toNode": "n_brain_meta_json_schema",
+      "label": "stores [EXTRACTED]"
+    },
+    {
+      "id": "e_community_detection_phase4_compression",
+      "fromNode": "n_community_detection",
+      "toNode": "n_phase4_compression",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_unified_memory_plan_tree_fractal_complementarity",
+      "fromNode": "n_unified_memory_plan",
+      "toNode": "n_tree_fractal_complementarity",
+      "label": "establishes [EXTRACTED]"
+    },
+    {
+      "id": "e_phase1_run_storage_graphify_ts_changes",
+      "fromNode": "n_phase1_run_storage",
+      "toNode": "n_graphify_ts_changes",
+      "label": "specifies [EXTRACTED]"
+    }
+  ]
+}

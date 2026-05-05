@@ -1,0 +1,60 @@
+{
+  "colorGroups": [
+    {
+      "query": "tag:#community/Pruning_&_Score_System",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Archetypes_&_Temperature_Tracking",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Run_Storage_&_Filesystem",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Graph_Isomorphism_&_Fractal_Math",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Compression_&_Communities",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Core_Proposals_&_Synthesis",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/Temporal_Decay_Foundations",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/Knowledge_Curation_Principles",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    }
+  ]
+}
