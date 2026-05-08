@@ -4,6 +4,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as os from "node:os";
 import { execSync } from "node:child_process";
+import { Text, Container, matchesKey, Key } from "@mariozechner/pi-tui";
 
 // ──────────────────────────────────────────────
 //  Constants
@@ -1003,7 +1004,7 @@ async function handleSave(
 
 async function handleList(
   ctx: ExtensionCommandContext,
-  pi: ExtensionAPI,
+  _pi: ExtensionAPI,
 ): Promise<void> {
   if (!fs.existsSync(INDEX_PATH)) {
     ctx.ui.notify(
@@ -1012,9 +1013,107 @@ async function handleList(
     );
     return;
   }
-  const content = fs.readFileSync(INDEX_PATH, "utf-8");
+
+  // Parse index.md to extract project entries
+  const raw = fs.readFileSync(INDEX_PATH, "utf-8");
+  const projects: Array<{
+    name: string;
+    path: string;
+    savedAt: string;
+    nodes: string;
+    edges: string;
+  }> = [];
+
+  const lines = raw.split("\n");
+  let current: (typeof projects)[number] | null = null;
+  for (const line of lines) {
+    const h2 = line.match(/^## (.+)/);
+    if (h2) {
+      if (current) projects.push(current);
+      current = { name: h2[1], path: "", savedAt: "", nodes: "?", edges: "?" };
+      continue;
+    }
+    if (!current) continue;
+    const pp = line.match(/\*\*Project path\*\*: `(.+?)`/);
+    if (pp) { current.path = pp[1]; continue; }
+    const sa = line.match(/\*\*Saved\*\*: (.+)/);
+    if (sa) { current.savedAt = sa[1]; continue; }
+    const nc = line.match(/\*\*Nodes\*\*: (\d+)/);
+    if (nc) { current.nodes = nc[1]; continue; }
+    const ec = line.match(/\*\*Edges\*\*: (\d+)/);
+    if (ec) { current.edges = ec[1]; continue; }
+  }
+  if (current) projects.push(current);
+
+  if (projects.length === 0) {
+    ctx.ui.notify("No projects found in index.", "info");
+    return;
+  }
+
+  // Show projects in an overlay (no LLM involvement)
   await ctx.waitForIdle?.();
-  pi.sendUserMessage(content);
+  await ctx.ui.custom<void>((tui, theme, _keybindings, done) => {
+    const container = new Container();
+
+    // Title
+    const title = new Text(
+      theme.bold(theme.fg("accent", "  Graphify Brain — Saved Projects")),
+      1,
+      0,
+    );
+    container.addChild(title);
+
+    // Divider
+    const divider = new Text(
+      theme.fg("dim", "  " + "─".repeat(Math.min(tui.cols - 4, 70))),
+      1,
+      0,
+    );
+    container.addChild(divider);
+
+    // Project entries
+    for (let i = 0; i < projects.length; i++) {
+      const p = projects[i];
+      const dateStr = p.savedAt
+        ? new Date(p.savedAt).toLocaleString()
+        : "unknown";
+
+      const header = theme.fg(
+        "accent",
+        `  ${theme.bold(p.name)}`,
+      );
+      const meta = theme.fg(
+        "muted",
+        `     ${p.nodes} nodes  ·  ${p.edges} edges  ·  saved ${dateStr}`,
+      );
+      const ppath = theme.fg("dim", `     ${p.path}`);
+
+      const entry = new Text([header, meta, ppath].join("\n"), 1, 0);
+      container.addChild(entry);
+
+      if (i < projects.length - 1) {
+        container.addChild(new Text("", 1, 0)); // spacer
+      }
+    }
+
+    // Footer hint
+    const footer = new Text(
+      theme.fg("dim", "\n  Press Enter or Escape to dismiss"),
+      1,
+      0,
+    );
+    container.addChild(footer);
+
+    return {
+      render: (w: number) => container.render(w),
+      invalidate: () => container.invalidate(),
+      handleInput: (data: string) => {
+        if (matchesKey(data, Key.enter) || matchesKey(data, Key.escape)) {
+          done();
+        }
+      },
+    };
+  }, { overlay: true });
 }
 
 async function handleLoad(
