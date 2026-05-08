@@ -692,7 +692,7 @@ def main():
     Path(gd / 'wiki' / '_WIKI.md').write_text('\n'.join(pointer), encoding='utf-8')
     
     print()
-    print(f'✅ Wiki generated: {gd / "wiki"}')
+    print(f'[DONE] Wiki generated: {gd / "wiki"}')
     print(f'   {len(list(wiki_dir.rglob("*.md")))} pages')
     print()
     print('Open wiki/_INDEX.md to start browsing.')
