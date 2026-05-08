@@ -1,0 +1,1377 @@
+{
+  "communities": {
+    "0": {
+      "label": "graphify.ts Core Implementation",
+      "members": [
+        {
+          "label": "graphify.ts",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "slugify()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "splitArgs()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "hasFlag()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "getFlagValue()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "positionalArgs()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "projectDirForSlug()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "runDirFor()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "archiveRunDirFor()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".getTemperature()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".getEntry()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "extractSections()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "brainContextForCwd()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "dirSize()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "formatBytes()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "countRunArtifacts()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "normalizeStringArray()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "normalizeRunMeta()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "loadRunMeta()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "writeRunMeta()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "recordRunAccess()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "addDaysIso()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleList()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleLoad()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleLoadRun()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleRuns()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "getNodeLabels()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "computePruneScores()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "selectMemoryForContext()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "findRunMetas()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "findRunMeta()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "resolveProjectRunFromArgs()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "getProjectSlugsForCommand()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handlePrune()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "pinMeta()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handlePin()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleUnpin()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "gcCandidateReason()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleGc()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "findArchivedRun()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleKeep()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleStats()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        }
+      ]
+    },
+    "1": {
+      "label": "Test Bundle & Brain Utilities",
+      "members": [
+        {
+          "label": "graphify-test-bundle.js",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "ensureBrainDir()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "ensureVault()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "slugify()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "constructor()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "load()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "save()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "recordAccess()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "decayTemperatures()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "getTemperature()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "getEntry()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "getStats()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "extractSections()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "rebuildBrainIndex()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "brainContextForCwd()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "copyObsidianToVault()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "rebuildVaultIndex()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "openInObsidian()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "graphify_default()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "dirSize()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "formatBytes()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleSave()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleList()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleLoad()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleLoadRun()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleRuns()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "getNodeLabels()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "computePruneScores()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "findRunMeta()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handlePrune()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handlePin()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleUnpin()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleGc()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleKeep()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleStats()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleWikiSyncCurrent()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleWikiSyncAll()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleWikiOpen()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "handleWikiNotes()",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        }
+      ]
+    },
+    "2": {
+      "label": "Memory System Architecture",
+      "members": [
+        {
+          "label": "git-checkpoint.ts",
+          "type": "code",
+          "file": "extensions/git-checkpoint.ts"
+        },
+        {
+          "label": "gitCheckpointExtension()",
+          "type": "code",
+          "file": "extensions/git-checkpoint.ts"
+        },
+        {
+          "label": "graphify-brain Memory System",
+          "type": "rationale",
+          "file": "README.md"
+        },
+        {
+          "label": "Pi Coding Agent Harness",
+          "type": "rationale",
+          "file": "README.md"
+        },
+        {
+          "label": "Run-Level Storage (Phase 1)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "Pinning Mechanism",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Garbage Collection (Archive/Restore)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": ".archive/ Directory (Grace Period)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "Obsidian Vault Integration",
+          "type": "rationale",
+          "file": "README.md"
+        },
+        {
+          "label": "Context Injection (brainContextForCwd)",
+          "type": "rationale",
+          "file": "memory-system-improvement-handoff.md"
+        },
+        {
+          "label": "Non-Negotiable Invariants",
+          "type": "rationale",
+          "file": "memory-system-improvement-handoff.md"
+        },
+        {
+          "label": "Backward Compatibility Guarantee",
+          "type": "rationale",
+          "file": "memory-system-improvement-handoff.md"
+        },
+        {
+          "label": "/memory save Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory load Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory list Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory runs Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory stats Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory pin Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory unpin Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory gc Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory keep Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "/memory-wiki Commands",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "Knowledge Graph Data Structure",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "graphify-out/ Output Directory",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "GRAPH_REPORT.md",
+          "type": "document",
+          "file": "README.md"
+        },
+        {
+          "label": "graph.json (Node-Link Data)",
+          "type": "rationale",
+          "file": "README.md"
+        },
+        {
+          "label": "graph.html (Interactive Viz)",
+          "type": "rationale",
+          "file": "README.md"
+        },
+        {
+          "label": "graphify.ts Extension (1682 lines)",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "git-checkpoint.ts Extension",
+          "type": "code",
+          "file": "extensions/git-checkpoint.ts"
+        },
+        {
+          "label": "graphify-test-bundle.js",
+          "type": "code",
+          "file": "test/graphify-test-bundle.js"
+        },
+        {
+          "label": "30-Day Archive Grace Period",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "archive-meta.json",
+          "type": "rationale",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "Implementation Handoff Document",
+          "type": "document",
+          "file": "memory-system-improvement-handoff.md"
+        }
+      ]
+    },
+    "3": {
+      "label": "Pruning & Temperature System",
+      "members": [
+        {
+          "label": "Pruning System (5-Signal Score)",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "HeatTracker (Temperature System)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Cross-Project Archetypes",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Weisfeiler-Lehman Color Refinement",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "MinHash/LSH Semantic Deduplication",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Ebbinghaus Forgetting Curve",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Cache Eviction (LRU/SIEVE)",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Subgraph Isomorphism (VF2)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "ARC Cache Algorithm",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Phase 3A - Memory Safety & Archive Restore",
+          "type": "rationale",
+          "file": "PHASE3A_USER_TESTS.md"
+        },
+        {
+          "label": "brain-meta.json (Global State)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "run-meta.json (Run Metadata)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "meta.json (Project Metadata)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "Verifier-Aware Memory Fields",
+          "type": "rationale",
+          "file": "memory-system-improvement-handoff.md"
+        },
+        {
+          "label": "8 Verification Gates",
+          "type": "rationale",
+          "file": "memory-system-improvement-handoff.md"
+        },
+        {
+          "label": "/memory prune Command",
+          "type": "document",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "Temperature System (Hot/Warm/Cold)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Project Slug (Normalized Name)",
+          "type": "rationale",
+          "file": "TUTORIAL.md"
+        },
+        {
+          "label": "Run ID (ISO Timestamp)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "Staleness (Prune Signal, 35% weight)",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Redundancy (Prune Signal, 25% weight)",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Low Signal (Prune Signal, 15% weight)",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Obsoletion (Prune Signal, 25% weight)",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Jaccard Similarity for Run Comparison",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Phase 3A User Test Checklist (11 Tests)",
+          "type": "document",
+          "file": "PHASE3A_USER_TESTS.md"
+        },
+        {
+          "label": "6-Phase Roadmap",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        }
+      ]
+    },
+    "4": {
+      "label": "HeatTracker Class",
+      "members": [
+        {
+          "label": "ensureBrainDir()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "HeatTracker",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".constructor()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".load()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".save()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".key()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".getOrMigrateEntry()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".seedHot()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".recordAccess()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".decayTemperatures()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": ".getStats()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "rebuildBrainIndex()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleSave()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        }
+      ]
+    },
+    "5": {
+      "label": "Design Proposals (Tree+Fractal)",
+      "members": [
+        {
+          "label": "Tree Memory Proposal",
+          "type": "document",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Fractal Memory Proposal",
+          "type": "document",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Unified Memory Management Plan",
+          "type": "document",
+          "file": "03-unified-plan.md"
+        },
+        {
+          "label": "Fractal Compression",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Zettelkasten Knowledge Management",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "Formal Concept Analysis (FCA)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Sparse Distributed Memory (SDM)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Hyperdimensional Computing (HDC/VSA)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Graph Summarization (Supernode)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "FractalNode Schema (Level/Parent/Summary)",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Coherence Score for Compression",
+          "type": "rationale",
+          "file": "02-fractal-memory-proposal.md"
+        },
+        {
+          "label": "Compression State Machine (Raw\u00e2\u2020\u2019Communities\u00e2\u2020\u2019Compressed\u00e2\u2020\u2019Frozen)",
+          "type": "rationale",
+          "file": "03-unified-plan.md"
+        }
+      ]
+    },
+    "6": {
+      "label": "Graphify Skill & Knowledge Graph",
+      "members": [
+        {
+          "label": "Centrality (Graph Theory)",
+          "type": "rationale",
+          "file": "01-tree-memory-proposal.md"
+        },
+        {
+          "label": "/graphify Skill",
+          "type": "document",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "Community Detection (Louvain/Leiden)",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "God Nodes (Centrality)",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "Surprising Connections",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "EXTRACTED/INFERRED/AMBIGUOUS Edge Types",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "Confidence Score System",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "AST Extraction (Structural)",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "Semantic Extraction (LLM-based)",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        },
+        {
+          "label": "graphifyy Python Package",
+          "type": "rationale",
+          "file": "skills/graphify/SKILL.md"
+        }
+      ]
+    },
+    "7": {
+      "label": "Obsidian Vault Integration",
+      "members": [
+        {
+          "label": "ensureVault()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "copyObsidianToVault()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "rebuildVaultIndex()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "openInObsidian()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleWikiSyncCurrent()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleWikiSyncAll()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleWikiOpen()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        },
+        {
+          "label": "handleWikiNotes()",
+          "type": "code",
+          "file": "extensions/graphify.ts"
+        }
+      ]
+    }
+  },
+  "cross_com_edges": {
+    "0": {
+      "2": [
+        {
+          "src": "graphify.ts",
+          "tgt": "Pi Coding Agent Harness",
+          "rel": "imports_from",
+          "conf": "EXTRACTED"
+        }
+      ],
+      "4": [
+        {
+          "src": "graphify.ts",
+          "tgt": "ensureBrainDir()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "HeatTracker",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "rebuildBrainIndex()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "handleSave()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": ".getTemperature()",
+          "tgt": ".getOrMigrateEntry()",
+          "rel": "calls",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": ".getEntry()",
+          "tgt": ".getOrMigrateEntry()",
+          "rel": "calls",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "recordRunAccess()",
+          "tgt": ".recordAccess()",
+          "rel": "calls",
+          "conf": "EXTRACTED"
+        }
+      ],
+      "7": [
+        {
+          "src": "graphify.ts",
+          "tgt": "ensureVault()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "copyObsidianToVault()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "rebuildVaultIndex()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "openInObsidian()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "handleWikiSyncCurrent()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "handleWikiSyncAll()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "handleWikiOpen()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts",
+          "tgt": "handleWikiNotes()",
+          "rel": "contains",
+          "conf": "EXTRACTED"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "src": "graphify-brain Memory System",
+          "tgt": "Pruning System (5-Signal Score)",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts Extension (1682 lines)",
+          "tgt": "HeatTracker (Temperature System)",
+          "rel": "implements",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "graphify.ts Extension (1682 lines)",
+          "tgt": "/memory prune Command",
+          "rel": "implements",
+          "conf": "EXTRACTED"
+        }
+      ]
+    },
+    "3": {
+      "2": [
+        {
+          "src": "6-Phase Roadmap",
+          "tgt": "Run-Level Storage (Phase 1)",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "Pruning System (5-Signal Score)",
+          "tgt": "Pinning Mechanism",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "run-meta.json (Run Metadata)",
+          "tgt": "Pinning Mechanism",
+          "rel": "stored_in",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "Phase 3A - Memory Safety & Archive Restore",
+          "tgt": "Non-Negotiable Invariants",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        }
+      ],
+      "5": [
+        {
+          "src": "6-Phase Roadmap",
+          "tgt": "Fractal Compression",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "run-meta.json (Run Metadata)",
+          "tgt": "Compression State Machine (Raw\u00e2\u2020\u2019Communities\u00e2\u2020\u2019Compressed\u00e2\u2020\u2019Frozen)",
+          "rel": "stored_in",
+          "conf": "EXTRACTED"
+        }
+      ]
+    },
+    "4": {
+      "0": [
+        {
+          "src": "handleSave()",
+          "tgt": "slugify()",
+          "rel": "calls",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "HeatTracker",
+          "tgt": ".getTemperature()",
+          "rel": "method",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "HeatTracker",
+          "tgt": ".getEntry()",
+          "rel": "method",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "handleSave()",
+          "tgt": "normalizeRunMeta()",
+          "rel": "calls",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "handleSave()",
+          "tgt": "writeRunMeta()",
+          "rel": "calls",
+          "conf": "EXTRACTED"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "src": "Unified Memory Management Plan",
+          "tgt": "Run-Level Storage (Phase 1)",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        }
+      ]
+    },
+    "6": {
+      "2": [
+        {
+          "src": "/graphify Skill",
+          "tgt": "Knowledge Graph Data Structure",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        },
+        {
+          "src": "/graphify Skill",
+          "tgt": "graphify-out/ Output Directory",
+          "rel": "references",
+          "conf": "EXTRACTED"
+        }
+      ],
+      "3": [
+        {
+          "src": "Centrality (Graph Theory)",
+          "tgt": "Pruning System (5-Signal Score)",
+          "rel": "rationale_for",
+          "conf": "INFERRED"
+        }
+      ]
+    },
+    "7": {
+      "0": [
+        {
+          "src": "handleWikiSyncCurrent()",
+          "tgt": "slugify()",
+          "rel": "calls",
+          "conf": "EXTRACTED"
+        }
+      ]
+    }
+  },
+  "bridge_nodes": [
+    {
+      "label": "graphify.ts",
+      "communities": [
+        2,
+        4,
+        7
+      ],
+      "degree": 52
+    },
+    {
+      "label": "slugify()",
+      "communities": [
+        4,
+        7
+      ],
+      "degree": 13
+    },
+    {
+      "label": "Pruning System (5-Signal Score)",
+      "communities": [
+        2,
+        6
+      ],
+      "degree": 10
+    },
+    {
+      "label": "run-meta.json (Run Metadata)",
+      "communities": [
+        2,
+        5
+      ],
+      "degree": 9
+    },
+    {
+      "label": "Run-Level Storage (Phase 1)",
+      "communities": [
+        3,
+        5
+      ],
+      "degree": 7
+    },
+    {
+      "label": "6-Phase Roadmap",
+      "communities": [
+        2,
+        5
+      ],
+      "degree": 6
+    },
+    {
+      "label": "graphify.ts Extension (1682 lines)",
+      "communities": [
+        3
+      ],
+      "degree": 15
+    },
+    {
+      "label": "HeatTracker",
+      "communities": [
+        0
+      ],
+      "degree": 12
+    },
+    {
+      "label": "graphify-brain Memory System",
+      "communities": [
+        3
+      ],
+      "degree": 11
+    },
+    {
+      "label": "writeRunMeta()",
+      "communities": [
+        4
+      ],
+      "degree": 9
+    },
+    {
+      "label": "/graphify Skill",
+      "communities": [
+        2
+      ],
+      "degree": 9
+    },
+    {
+      "label": "recordRunAccess()",
+      "communities": [
+        4
+      ],
+      "degree": 8
+    },
+    {
+      "label": "handleSave()",
+      "communities": [
+        0
+      ],
+      "degree": 7
+    },
+    {
+      "label": "ensureVault()",
+      "communities": [
+        0
+      ],
+      "degree": 6
+    },
+    {
+      "label": "normalizeRunMeta()",
+      "communities": [
+        4
+      ],
+      "degree": 6
+    }
+  ],
+  "god_nodes": "## God Nodes (most connected - your core abstractions)\n1. `graphify.ts Extension (1682 lines)` - 15 edges\n2. `slugify()` - 13 edges\n3. `HeatTracker` - 12 edges\n4. `handleGc()` - 12 edges\n5. `runDirFor()` - 11 edges\n6. `graphify-brain Memory System` - 11 edges\n7. `loadRunMeta()` - 10 edges\n8. `computePruneScores()` - 10 edges\n9. `resolveProjectRunFromArgs()` - 10 edges\n10. `handleKeep()` - 10 edges\n",
+  "surprising": "## Surprising Connections (you probably didn't know these)\n- `graphify.ts Extension (1682 lines)` --implements--> `/memory prune Command`  [EXTRACTED]\n  extensions/graphify.ts \u00e2\u2020\u2019 TUTORIAL.md\n- `Tree Memory Proposal` --semantically_similar_to--> `Fractal Memory Proposal`  [INFERRED] [semantically similar]\n  01-tree-memory-proposal.md \u00e2\u2020\u2019 02-fractal-memory-proposal.md\n- `graphify.ts Extension (1682 lines)` --implements--> `HeatTracker (Temperature System)`  [EXTRACTED]\n  extensions/graphify.ts \u00e2\u2020\u2019 02-fractal-memory-proposal.md\n- `graphify.ts Extension (1682 lines)` --implements--> `/memory list Command`  [EXTRACTED]\n  extensions/graphify.ts \u00e2\u2020\u2019 TUTORIAL.md\n- `graphify.ts Extension (1682 lines)` --implements--> `/memory runs Command`  [EXTRACTED]\n  extensions/graphify.ts \u00e2\u2020\u2019 TUTORIAL.md\n",
+  "hyperedges": [
+    {
+      "id": "memory_command_set",
+      "label": "Complete /memory Command Set",
+      "nodes": [
+        "memory_save_command",
+        "memory_load_command",
+        "memory_list_command",
+        "memory_runs_command",
+        "memory_prune_command",
+        "memory_stats_command",
+        "memory_pin_command",
+        "memory_unpin_command",
+        "memory_gc_command",
+        "memory_keep_command",
+        "memory_wiki_commands"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md"
+    },
+    {
+      "id": "prune_score_system",
+      "label": "Prune Score Composite System",
+      "nodes": [
+        "pruning_system",
+        "prune_score_staleness",
+        "prune_score_redundancy",
+        "prune_score_low_signal",
+        "prune_score_obsoletion",
+        "pinning",
+        "jaccard_similarity"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md"
+    },
+    {
+      "id": "core_synthesis",
+      "label": "Unified Tree+Fractal Synthesis",
+      "nodes": [
+        "tree_memory_proposal",
+        "fractal_memory_proposal",
+        "unified_plan",
+        "six_phase_roadmap"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md"
+    }
+  ]
+}
