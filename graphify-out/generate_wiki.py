@@ -330,8 +330,8 @@ def write_overview(graph_dir, parsed, com_details):
         '',
         '# Architecture at a Glance',
         '',
-        gods = parsed.get('gods', [])
     ]
+    gods = parsed.get('gods', [])
     if gods:
         lines.extend([
             '',
