@@ -272,7 +272,7 @@ def write_index(graph_dir, parsed):
     ])
     
     Path(graph_dir / 'wiki' / '_INDEX.md').write_text('\n'.join(lines), encoding='utf-8')
-    print(f'  ✓ _INDEX.md')
+    print(f'  [OK] _INDEX.md')
 
 
 def write_overview(graph_dir, parsed):
@@ -310,7 +310,7 @@ def write_overview(graph_dir, parsed):
         '',
     ]
     Path(overview_dir / '_README.md').write_text('\n'.join(lines), encoding='utf-8')
-    print(f'  ✓ 01_OVERVIEW/_README.md')
+    print(f'  [OK] 01_OVERVIEW/_README.md')
     
     # Architecture at a Glance
     lines = [
@@ -374,7 +374,7 @@ def write_overview(graph_dir, parsed):
         ])
     
     Path(overview_dir / 'ARCHITECTURE_AT_A_GLANCE.md').write_text('\n'.join(lines), encoding='utf-8')
-    print(f'  ✓ 01_OVERVIEW/ARCHITECTURE_AT_A_GLANCE.md')
+    print(f'  [OK] 01_OVERVIEW/ARCHITECTURE_AT_A_GLANCE.md')
     
     # Glossary
     lines = [
@@ -424,7 +424,7 @@ def write_overview(graph_dir, parsed):
             lines.append(f'| {g["label"]} | God node ({g["degree"]} connections) |')
     
     Path(overview_dir / 'GLOSSARY.md').write_text('\n'.join(lines), encoding='utf-8')
-    print(f'  ✓ 01_OVERVIEW/GLOSSARY.md')
+    print(f'  [OK] 01_OVERVIEW/GLOSSARY.md')
 
 
 def write_communities(graph_dir, parsed, graph):
@@ -472,7 +472,7 @@ def write_communities(graph_dir, parsed, graph):
     ])
     
     Path(com_dir / '_README.md').write_text('\n'.join(lines), encoding='utf-8')
-    print(f'  ✓ 02_TOP_COMMUNITIES/_README.md')
+    print(f'  [OK] 02_TOP_COMMUNITIES/_README.md')
     
     # Build node label map from graph
     node_labels = {}
@@ -613,7 +613,7 @@ def write_communities(graph_dir, parsed, graph):
         safe_name = f'COMMUNITY_{cid}'
         Path(com_dir / f'{safe_name}.md').write_text('\n'.join(lines), encoding='utf-8')
     
-    print(f'  ✓ {len(sorted_coms)} community narrative pages')
+    print(f'  [OK] {len(sorted_coms)} community narrative pages')
 
 
 # ── Main ────────────────────────────────────────────────────────────
