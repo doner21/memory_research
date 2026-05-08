@@ -1,26 +1,166 @@
 {
-  "C:\\Users\\DONALD\\memory-research\\01-tree-memory-proposal.md": {
-    "mtime": 1777852016.027086,
-    "hash": "d59585bac073452c77ccaf512e7209a6"
+  "C:\\Users\\doner\\memory reaserch\\extensions\\git-checkpoint.ts": {
+    "mtime": 1778013150.7424033,
+    "hash": "2a58a1016a253ed587c27148188625af"
   },
-  "C:\\Users\\DONALD\\memory-research\\02-fractal-memory-proposal.md": {
-    "mtime": 1777852016.027086,
-    "hash": "63f08ee531e9a6b01ad6118009c49616"
+  "C:\\Users\\doner\\memory reaserch\\extensions\\graphify.ts": {
+    "mtime": 1778063102.4113567,
+    "hash": "be671de2834cf2397b4bc4d280a19878"
   },
-  "C:\\Users\\DONALD\\memory-research\\03-unified-plan.md": {
-    "mtime": 1777852016.027086,
-    "hash": "7c258c81fc63340f6c9cd7808f1655ec"
+  "C:\\Users\\doner\\memory reaserch\\test\\graphify-test-bundle.js": {
+    "mtime": 1778013150.7464378,
+    "hash": "34f14959fa6f82165296a7128a2a810b"
   },
-  "C:\\Users\\DONALD\\memory-research\\memory-system-improvement-handoff.md": {
-    "mtime": 1777859165.8577666,
-    "hash": "2f2a9f1953647214f9f45a4b82e1ef85"
+  "C:\\Users\\doner\\memory reaserch\\01-tree-memory-proposal.md": {
+    "mtime": 1778008330.7461233,
+    "hash": "c6bbdf9de66ee254bb399cc735b26487"
   },
-  "C:\\Users\\DONALD\\memory-research\\PHASE3A_USER_TESTS.md": {
-    "mtime": 1777944168.0133197,
-    "hash": "5c93a0ce1a4a9185cb4affad8feaff23"
+  "C:\\Users\\doner\\memory reaserch\\02-fractal-memory-proposal.md": {
+    "mtime": 1778008330.7461233,
+    "hash": "4d537b490cc59077839bcbdbe205d751"
   },
-  "C:\\Users\\DONALD\\memory-research\\TUTORIAL.md": {
-    "mtime": 1777944103.5523388,
-    "hash": "883549d1461211836afcfc28ce87c031"
+  "C:\\Users\\doner\\memory reaserch\\03-unified-plan.md": {
+    "mtime": 1778008330.747129,
+    "hash": "7226baba36747da71979e7c098813020"
+  },
+  "C:\\Users\\doner\\memory reaserch\\memory-system-improvement-handoff.md": {
+    "mtime": 1778008330.7653534,
+    "hash": "f9ccbd335c5838da0014814eaaafe893"
+  },
+  "C:\\Users\\doner\\memory reaserch\\PHASE3A_USER_TESTS.md": {
+    "mtime": 1778008330.747129,
+    "hash": "b5010fe14f83b6c4e05438a39e573c73"
+  },
+  "C:\\Users\\doner\\memory reaserch\\README.md": {
+    "mtime": 1778013150.7424033,
+    "hash": "5ed8fbbc56aa28a9a0c84df4a90ec1c6"
+  },
+  "C:\\Users\\doner\\memory reaserch\\TUTORIAL.md": {
+    "mtime": 1778008330.7481275,
+    "hash": "aa8a8519171b4c0471d44fb37f6f56ca"
+  },
+  "C:\\Users\\doner\\memory reaserch\\skills\\graphify\\SKILL.md": {
+    "mtime": 1778013150.7464378,
+    "hash": "8bdd6056478b081e4ff100294b33b1b3"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\_INDEX.md": {
+    "mtime": 1778240807.9913929,
+    "hash": "ff399792e3378aa5a41391820dfcc5e2"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\01_OVERVIEW\\ARCHITECTURE_AT_A_GLANCE.md": {
+    "mtime": 1778240844.1391451,
+    "hash": "0d2bd51357fd3814604a9f2e7d5df8b2"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\01_OVERVIEW\\GLOSSARY.md": {
+    "mtime": 1778240874.5662684,
+    "hash": "51ea03722f0a5743238444ad0748165e"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\01_OVERVIEW\\_README.md": {
+    "mtime": 1778240820.7792747,
+    "hash": "e7386bc6ea3ac5528c3105a235c943b8"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\02_SYSTEM_LAYERS\\LAYER_01_Storage.md": {
+    "mtime": 1778240903.1344132,
+    "hash": "04e1978c59796956d0aa107eecee3506"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\02_SYSTEM_LAYERS\\LAYER_02_Scoring.md": {
+    "mtime": 1778240918.8348901,
+    "hash": "bf9b29d5f6b072267d8a4a41e841b43e"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\02_SYSTEM_LAYERS\\LAYER_03_Temperature.md": {
+    "mtime": 1778240935.9027653,
+    "hash": "6fb76011b765d6bc19aebec94bbf903b"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\02_SYSTEM_LAYERS\\LAYER_04_Compression.md": {
+    "mtime": 1778240952.1539562,
+    "hash": "6b1904c831a686369d87a78c77662afa"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\02_SYSTEM_LAYERS\\LAYER_05_Archetypes.md": {
+    "mtime": 1778240965.9517202,
+    "hash": "e8480c19dc535a8e7a4c8a6ab4669521"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\02_SYSTEM_LAYERS\\_README.md": {
+    "mtime": 1778240886.3760087,
+    "hash": "f76505b031a956e4c269e9de1bb22181"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_Architecture.md": {
+    "mtime": 1778241027.0625968,
+    "hash": "c6bb405ac5ede4a61668b44e17d0876b"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_Design.md": {
+    "mtime": 1778241073.6985466,
+    "hash": "b4a126845b315a19b95d381560d9dcdd"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_Graphify.md": {
+    "mtime": 1778241088.5925264,
+    "hash": "f72bc4c3861986a50367db3716633988"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_HeatTracker.md": {
+    "mtime": 1778241056.8017561,
+    "hash": "056c14778afc5fc54045f96979e5bb18"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_Implementations.md": {
+    "mtime": 1778240998.7863061,
+    "hash": "a8efc94b8e0f0f31e16813d69b99fc1f"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_Obsidian.md": {
+    "mtime": 1778241103.7571983,
+    "hash": "fbd367ee9dd52f1bfb5960a25b05ef4c"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_Pruning.md": {
+    "mtime": 1778241042.4852624,
+    "hash": "d08f825ee5640194ad5b07d9448cfca2"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\COMMUNITY_Testing.md": {
+    "mtime": 1778241012.6625667,
+    "hash": "bd98ad1fc0d9c7614a024e671e05d47c"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\03_COMMUNITY_NARRATIVES\\_README.md": {
+    "mtime": 1778240976.8501296,
+    "hash": "f0d57f475b7c4308e5f0a0b77002d8d1"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\04_DECISIONS\\DECISION_30_day_archive.md": {
+    "mtime": 1778241140.08496,
+    "hash": "1784c45a9000e0edbd896caa20b9cd4f"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\04_DECISIONS\\DECISION_5_signal_prune.md": {
+    "mtime": 1778241154.2850902,
+    "hash": "de99729804fd2bea35dc6f869ecd06a3"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\04_DECISIONS\\DECISION_obsidian_viewer.md": {
+    "mtime": 1778241183.4319599,
+    "hash": "3b63c0f67d66aca67a3423fa544baab7"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\04_DECISIONS\\DECISION_temperature_over_lru.md": {
+    "mtime": 1778241169.7803092,
+    "hash": "582e1547366f6186e88a618fc762eae8"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\04_DECISIONS\\DECISION_tree_plus_graph.md": {
+    "mtime": 1778241127.674211,
+    "hash": "1b8fa7636766fd789c328836ba84f8ba"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\04_DECISIONS\\_README.md": {
+    "mtime": 1778241113.3091738,
+    "hash": "0bc37290bfbd79f10fd21c90c316e5cf"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\05_LLM_INSTRUCTIONS\\INSTRUCTION_architecture_review.md": {
+    "mtime": 1778241230.065389,
+    "hash": "63ef78d678906a4e07891b59c20a2bc8"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\05_LLM_INSTRUCTIONS\\INSTRUCTION_feature_add.md": {
+    "mtime": 1778241240.6517963,
+    "hash": "335a4aed3953f1f4f0aa10034551b50f"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\05_LLM_INSTRUCTIONS\\INSTRUCTION_setup.md": {
+    "mtime": 1778241220.9374094,
+    "hash": "aef0d92e16dfb85b8823647e22f2a8b6"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\05_LLM_INSTRUCTIONS\\PROMPT_TEMPLATES.md": {
+    "mtime": 1778241211.7251012,
+    "hash": "416e35147e67d38ae3a28f2175551439"
+  },
+  "C:\\Users\\doner\\memory reaserch\\graphify-out\\wiki\\05_LLM_INSTRUCTIONS\\_README.md": {
+    "mtime": 1778241198.4864757,
+    "hash": "86001693520d0dd28fc0ef4a24633cc3"
   }
 }

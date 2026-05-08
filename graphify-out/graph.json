@@ -4,27 +4,6 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "memory_command_set",
-        "label": "Complete /memory Command Set",
-        "nodes": [
-          "memory_save_command",
-          "memory_load_command",
-          "memory_list_command",
-          "memory_runs_command",
-          "memory_prune_command",
-          "memory_stats_command",
-          "memory_pin_command",
-          "memory_unpin_command",
-          "memory_gc_command",
-          "memory_keep_command",
-          "memory_wiki_commands"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "TUTORIAL.md"
-      },
-      {
         "id": "prune_score_system",
         "label": "Prune Score Composite System",
         "nodes": [
@@ -54,6 +33,45 @@
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
         "source_file": "03-unified-plan.md"
+      },
+      {
+        "id": "memory_command_set",
+        "label": "Complete /memory Command Set",
+        "nodes": [
+          "memory_save_command",
+          "memory_load_command",
+          "memory_list_command",
+          "memory_runs_command",
+          "memory_prune_command",
+          "memory_stats_command",
+          "memory_pin_command",
+          "memory_unpin_command",
+          "memory_gc_command",
+          "memory_keep_command",
+          "memory_wiki_commands"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "TUTORIAL.md"
+      },
+      {
+        "id": "wiki_documentation_system",
+        "label": "Complete Wiki Documentation System",
+        "nodes": [
+          "wiki_index",
+          "wiki_overview",
+          "wiki_architecture",
+          "wiki_glossary",
+          "wiki_layers_index",
+          "wiki_communities_index",
+          "wiki_decisions_index",
+          "wiki_llm_index"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "graphify-out/wiki/_INDEX.md"
       }
     ]
   },
@@ -64,7 +82,7 @@
       "source_file": "extensions/git-checkpoint.ts",
       "source_location": "L1",
       "id": "extensions_git_checkpoint_ts",
-      "community": 2,
+      "community": 4,
       "norm_label": "git-checkpoint.ts"
     },
     {
@@ -73,7 +91,7 @@
       "source_file": "extensions/git-checkpoint.ts",
       "source_location": "L16",
       "id": "extensions_git_checkpoint_gitcheckpointextension",
-      "community": 2,
+      "community": 4,
       "norm_label": "gitcheckpointextension()"
     },
     {
@@ -89,25 +107,25 @@
       "label": "ensureBrainDir()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "extensions_graphify_ensurebraindir",
-      "community": 4,
+      "community": 0,
       "norm_label": "ensurebraindir()"
     },
     {
       "label": "ensureVault()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "extensions_graphify_ensurevault",
-      "community": 7,
+      "community": 8,
       "norm_label": "ensurevault()"
     },
     {
       "label": "slugify()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L34",
+      "source_location": "L35",
       "id": "extensions_graphify_slugify",
       "community": 0,
       "norm_label": "slugify()"
@@ -116,7 +134,7 @@
       "label": "splitArgs()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L41",
+      "source_location": "L42",
       "id": "extensions_graphify_splitargs",
       "community": 0,
       "norm_label": "splitargs()"
@@ -125,7 +143,7 @@
       "label": "hasFlag()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L45",
+      "source_location": "L46",
       "id": "extensions_graphify_hasflag",
       "community": 0,
       "norm_label": "hasflag()"
@@ -134,7 +152,7 @@
       "label": "getFlagValue()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L49",
+      "source_location": "L50",
       "id": "extensions_graphify_getflagvalue",
       "community": 0,
       "norm_label": "getflagvalue()"
@@ -143,7 +161,7 @@
       "label": "positionalArgs()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L56",
+      "source_location": "L57",
       "id": "extensions_graphify_positionalargs",
       "community": 0,
       "norm_label": "positionalargs()"
@@ -152,7 +170,7 @@
       "label": "projectDirForSlug()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L68",
+      "source_location": "L69",
       "id": "extensions_graphify_projectdirforslug",
       "community": 0,
       "norm_label": "projectdirforslug()"
@@ -161,7 +179,7 @@
       "label": "runDirFor()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L72",
+      "source_location": "L73",
       "id": "extensions_graphify_rundirfor",
       "community": 0,
       "norm_label": "rundirfor()"
@@ -170,7 +188,7 @@
       "label": "archiveRunDirFor()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L76",
+      "source_location": "L77",
       "id": "extensions_graphify_archiverundirfor",
       "community": 0,
       "norm_label": "archiverundirfor()"
@@ -179,115 +197,115 @@
       "label": "HeatTracker",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L132",
+      "source_location": "L133",
       "id": "extensions_graphify_heattracker",
-      "community": 4,
+      "community": 5,
       "norm_label": "heattracker"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L136",
+      "source_location": "L137",
       "id": "extensions_graphify_heattracker_constructor",
-      "community": 4,
+      "community": 5,
       "norm_label": ".constructor()"
     },
     {
       "label": ".load()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L142",
+      "source_location": "L143",
       "id": "extensions_graphify_heattracker_load",
-      "community": 4,
+      "community": 5,
       "norm_label": ".load()"
     },
     {
       "label": ".save()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L168",
+      "source_location": "L169",
       "id": "extensions_graphify_heattracker_save",
-      "community": 4,
+      "community": 5,
       "norm_label": ".save()"
     },
     {
       "label": ".key()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L173",
+      "source_location": "L174",
       "id": "extensions_graphify_heattracker_key",
-      "community": 4,
+      "community": 5,
       "norm_label": ".key()"
     },
     {
       "label": ".getOrMigrateEntry()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L177",
+      "source_location": "L178",
       "id": "extensions_graphify_heattracker_getormigrateentry",
-      "community": 4,
+      "community": 5,
       "norm_label": ".getormigrateentry()"
     },
     {
       "label": ".seedHot()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L190",
+      "source_location": "L191",
       "id": "extensions_graphify_heattracker_seedhot",
-      "community": 4,
+      "community": 5,
       "norm_label": ".seedhot()"
     },
     {
       "label": ".recordAccess()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L199",
+      "source_location": "L200",
       "id": "extensions_graphify_heattracker_recordaccess",
-      "community": 4,
+      "community": 5,
       "norm_label": ".recordaccess()"
     },
     {
       "label": ".decayTemperatures()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L215",
+      "source_location": "L216",
       "id": "extensions_graphify_heattracker_decaytemperatures",
-      "community": 4,
+      "community": 5,
       "norm_label": ".decaytemperatures()"
     },
     {
       "label": ".getTemperature()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L242",
+      "source_location": "L243",
       "id": "extensions_graphify_heattracker_gettemperature",
-      "community": 0,
+      "community": 5,
       "norm_label": ".gettemperature()"
     },
     {
       "label": ".getEntry()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L246",
+      "source_location": "L247",
       "id": "extensions_graphify_heattracker_getentry",
-      "community": 0,
+      "community": 5,
       "norm_label": ".getentry()"
     },
     {
       "label": ".getStats()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L250",
+      "source_location": "L251",
       "id": "extensions_graphify_heattracker_getstats",
-      "community": 4,
+      "community": 5,
       "norm_label": ".getstats()"
     },
     {
       "label": "extractSections()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L263",
+      "source_location": "L264",
       "id": "extensions_graphify_extractsections",
       "community": 0,
       "norm_label": "extractsections()"
@@ -296,16 +314,16 @@
       "label": "rebuildBrainIndex()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L281",
+      "source_location": "L282",
       "id": "extensions_graphify_rebuildbrainindex",
-      "community": 4,
+      "community": 0,
       "norm_label": "rebuildbrainindex()"
     },
     {
       "label": "brainContextForCwd()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L324",
+      "source_location": "L325",
       "id": "extensions_graphify_braincontextforcwd",
       "community": 0,
       "norm_label": "braincontextforcwd()"
@@ -314,34 +332,34 @@
       "label": "copyObsidianToVault()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L382",
+      "source_location": "L383",
       "id": "extensions_graphify_copyobsidiantovault",
-      "community": 7,
+      "community": 8,
       "norm_label": "copyobsidiantovault()"
     },
     {
       "label": "rebuildVaultIndex()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L432",
+      "source_location": "L433",
       "id": "extensions_graphify_rebuildvaultindex",
-      "community": 7,
+      "community": 8,
       "norm_label": "rebuildvaultindex()"
     },
     {
       "label": "openInObsidian()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L569",
+      "source_location": "L570",
       "id": "extensions_graphify_openinobsidian",
-      "community": 7,
+      "community": 8,
       "norm_label": "openinobsidian()"
     },
     {
       "label": "dirSize()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L711",
+      "source_location": "L712",
       "id": "extensions_graphify_dirsize",
       "community": 0,
       "norm_label": "dirsize()"
@@ -350,7 +368,7 @@
       "label": "formatBytes()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L726",
+      "source_location": "L727",
       "id": "extensions_graphify_formatbytes",
       "community": 0,
       "norm_label": "formatbytes()"
@@ -359,7 +377,7 @@
       "label": "countRunArtifacts()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L732",
+      "source_location": "L733",
       "id": "extensions_graphify_countrunartifacts",
       "community": 0,
       "norm_label": "countrunartifacts()"
@@ -368,7 +386,7 @@
       "label": "normalizeStringArray()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L741",
+      "source_location": "L742",
       "id": "extensions_graphify_normalizestringarray",
       "community": 0,
       "norm_label": "normalizestringarray()"
@@ -377,7 +395,7 @@
       "label": "normalizeRunMeta()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L745",
+      "source_location": "L746",
       "id": "extensions_graphify_normalizerunmeta",
       "community": 0,
       "norm_label": "normalizerunmeta()"
@@ -386,7 +404,7 @@
       "label": "loadRunMeta()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L806",
+      "source_location": "L807",
       "id": "extensions_graphify_loadrunmeta",
       "community": 0,
       "norm_label": "loadrunmeta()"
@@ -395,7 +413,7 @@
       "label": "writeRunMeta()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L820",
+      "source_location": "L821",
       "id": "extensions_graphify_writerunmeta",
       "community": 0,
       "norm_label": "writerunmeta()"
@@ -404,7 +422,7 @@
       "label": "recordRunAccess()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L826",
+      "source_location": "L827",
       "id": "extensions_graphify_recordrunaccess",
       "community": 0,
       "norm_label": "recordrunaccess()"
@@ -413,7 +431,7 @@
       "label": "addDaysIso()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L845",
+      "source_location": "L846",
       "id": "extensions_graphify_adddaysiso",
       "community": 0,
       "norm_label": "adddaysiso()"
@@ -422,16 +440,16 @@
       "label": "handleSave()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L853",
+      "source_location": "L854",
       "id": "extensions_graphify_handlesave",
-      "community": 4,
+      "community": 0,
       "norm_label": "handlesave()"
     },
     {
       "label": "handleList()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1004",
+      "source_location": "L1005",
       "id": "extensions_graphify_handlelist",
       "community": 0,
       "norm_label": "handlelist()"
@@ -440,7 +458,7 @@
       "label": "handleLoad()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1020",
+      "source_location": "L1119",
       "id": "extensions_graphify_handleload",
       "community": 0,
       "norm_label": "handleload()"
@@ -449,7 +467,7 @@
       "label": "handleLoadRun()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1070",
+      "source_location": "L1169",
       "id": "extensions_graphify_handleloadrun",
       "community": 0,
       "norm_label": "handleloadrun()"
@@ -458,7 +476,7 @@
       "label": "handleRuns()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1114",
+      "source_location": "L1213",
       "id": "extensions_graphify_handleruns",
       "community": 0,
       "norm_label": "handleruns()"
@@ -467,7 +485,7 @@
       "label": "getNodeLabels()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1162",
+      "source_location": "L1261",
       "id": "extensions_graphify_getnodelabels",
       "community": 0,
       "norm_label": "getnodelabels()"
@@ -476,7 +494,7 @@
       "label": "computePruneScores()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1172",
+      "source_location": "L1271",
       "id": "extensions_graphify_computeprunescores",
       "community": 0,
       "norm_label": "computeprunescores()"
@@ -485,7 +503,7 @@
       "label": "selectMemoryForContext()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1264",
+      "source_location": "L1363",
       "id": "extensions_graphify_selectmemoryforcontext",
       "community": 0,
       "norm_label": "selectmemoryforcontext()"
@@ -494,7 +512,7 @@
       "label": "findRunMetas()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1293",
+      "source_location": "L1392",
       "id": "extensions_graphify_findrunmetas",
       "community": 0,
       "norm_label": "findrunmetas()"
@@ -503,7 +521,7 @@
       "label": "findRunMeta()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1307",
+      "source_location": "L1406",
       "id": "extensions_graphify_findrunmeta",
       "community": 0,
       "norm_label": "findrunmeta()"
@@ -512,7 +530,7 @@
       "label": "resolveProjectRunFromArgs()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1312",
+      "source_location": "L1411",
       "id": "extensions_graphify_resolveprojectrunfromargs",
       "community": 0,
       "norm_label": "resolveprojectrunfromargs()"
@@ -521,7 +539,7 @@
       "label": "getProjectSlugsForCommand()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1346",
+      "source_location": "L1445",
       "id": "extensions_graphify_getprojectslugsforcommand",
       "community": 0,
       "norm_label": "getprojectslugsforcommand()"
@@ -530,7 +548,7 @@
       "label": "handlePrune()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1357",
+      "source_location": "L1456",
       "id": "extensions_graphify_handleprune",
       "community": 0,
       "norm_label": "handleprune()"
@@ -539,7 +557,7 @@
       "label": "pinMeta()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1380",
+      "source_location": "L1479",
       "id": "extensions_graphify_pinmeta",
       "community": 0,
       "norm_label": "pinmeta()"
@@ -548,7 +566,7 @@
       "label": "handlePin()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1391",
+      "source_location": "L1490",
       "id": "extensions_graphify_handlepin",
       "community": 0,
       "norm_label": "handlepin()"
@@ -557,7 +575,7 @@
       "label": "handleUnpin()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1403",
+      "source_location": "L1502",
       "id": "extensions_graphify_handleunpin",
       "community": 0,
       "norm_label": "handleunpin()"
@@ -566,7 +584,7 @@
       "label": "gcCandidateReason()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1416",
+      "source_location": "L1515",
       "id": "extensions_graphify_gccandidatereason",
       "community": 0,
       "norm_label": "gccandidatereason()"
@@ -575,7 +593,7 @@
       "label": "handleGc()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1420",
+      "source_location": "L1519",
       "id": "extensions_graphify_handlegc",
       "community": 0,
       "norm_label": "handlegc()"
@@ -584,7 +602,7 @@
       "label": "findArchivedRun()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1467",
+      "source_location": "L1566",
       "id": "extensions_graphify_findarchivedrun",
       "community": 0,
       "norm_label": "findarchivedrun()"
@@ -593,7 +611,7 @@
       "label": "handleKeep()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1488",
+      "source_location": "L1587",
       "id": "extensions_graphify_handlekeep",
       "community": 0,
       "norm_label": "handlekeep()"
@@ -602,7 +620,7 @@
       "label": "handleStats()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1511",
+      "source_location": "L1610",
       "id": "extensions_graphify_handlestats",
       "community": 0,
       "norm_label": "handlestats()"
@@ -611,36 +629,36 @@
       "label": "handleWikiSyncCurrent()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1568",
+      "source_location": "L1667",
       "id": "extensions_graphify_handlewikisynccurrent",
-      "community": 7,
+      "community": 8,
       "norm_label": "handlewikisynccurrent()"
     },
     {
       "label": "handleWikiSyncAll()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1595",
+      "source_location": "L1694",
       "id": "extensions_graphify_handlewikisyncall",
-      "community": 7,
+      "community": 8,
       "norm_label": "handlewikisyncall()"
     },
     {
       "label": "handleWikiOpen()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1639",
+      "source_location": "L1738",
       "id": "extensions_graphify_handlewikiopen",
-      "community": 7,
+      "community": 8,
       "norm_label": "handlewikiopen()"
     },
     {
       "label": "handleWikiNotes()",
       "file_type": "code",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1661",
+      "source_location": "L1760",
       "id": "extensions_graphify_handlewikinotes",
-      "community": 7,
+      "community": 8,
       "norm_label": "handlewikinotes()"
     },
     {
@@ -995,52 +1013,28 @@
       "norm_label": "handlewikinotes()"
     },
     {
-      "label": "graphify-brain Memory System",
-      "file_type": "rationale",
-      "source_file": "README.md",
-      "id": "graphify_brain",
-      "community": 2,
-      "norm_label": "graphify-brain memory system"
+      "label": "git-checkpoint.ts Extension",
+      "file_type": "code",
+      "source_file": "extensions/git-checkpoint.ts",
+      "id": "git_checkpoint_extension",
+      "community": 9,
+      "norm_label": "git-checkpoint.ts extension"
     },
     {
-      "label": "Pi Coding Agent Harness",
-      "file_type": "rationale",
-      "source_file": "README.md",
-      "id": "pi_coding_agent",
-      "community": 2,
-      "norm_label": "pi coding agent harness"
+      "label": "graphify-test-bundle.js",
+      "file_type": "code",
+      "source_file": "test/graphify-test-bundle.js",
+      "id": "graphify_test_bundle",
+      "community": 10,
+      "norm_label": "graphify-test-bundle.js"
     },
     {
       "label": "Tree Memory Proposal",
       "file_type": "document",
       "source_file": "01-tree-memory-proposal.md",
       "id": "tree_memory_proposal",
-      "community": 5,
+      "community": 6,
       "norm_label": "tree memory proposal"
-    },
-    {
-      "label": "Fractal Memory Proposal",
-      "file_type": "document",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "fractal_memory_proposal",
-      "community": 5,
-      "norm_label": "fractal memory proposal"
-    },
-    {
-      "label": "Unified Memory Management Plan",
-      "file_type": "document",
-      "source_file": "03-unified-plan.md",
-      "id": "unified_plan",
-      "community": 5,
-      "norm_label": "unified memory management plan"
-    },
-    {
-      "label": "Run-Level Storage (Phase 1)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "run_level_storage",
-      "community": 2,
-      "norm_label": "run-level storage (phase 1)"
     },
     {
       "label": "Pruning System (5-Signal Score)",
@@ -1055,63 +1049,15 @@
       "file_type": "rationale",
       "source_file": "01-tree-memory-proposal.md",
       "id": "pinning",
-      "community": 2,
+      "community": 3,
       "norm_label": "pinning mechanism"
-    },
-    {
-      "label": "Garbage Collection (Archive/Restore)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "garbage_collection",
-      "community": 2,
-      "norm_label": "garbage collection (archive/restore)"
-    },
-    {
-      "label": "HeatTracker (Temperature System)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "heattracker",
-      "community": 3,
-      "norm_label": "heattracker (temperature system)"
-    },
-    {
-      "label": "Cross-Project Archetypes",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "archetypes",
-      "community": 3,
-      "norm_label": "cross-project archetypes"
-    },
-    {
-      "label": "Fractal Compression",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "fractal_compression",
-      "community": 5,
-      "norm_label": "fractal compression"
-    },
-    {
-      "label": "Weisfeiler-Lehman Color Refinement",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "weisfeiler_lehman",
-      "community": 3,
-      "norm_label": "weisfeiler-lehman color refinement"
-    },
-    {
-      "label": "MinHash/LSH Semantic Deduplication",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "minhash_lsh",
-      "community": 3,
-      "norm_label": "minhash/lsh semantic deduplication"
     },
     {
       "label": "Zettelkasten Knowledge Management",
       "file_type": "rationale",
       "source_file": "01-tree-memory-proposal.md",
       "id": "zettelkasten",
-      "community": 5,
+      "community": 6,
       "norm_label": "zettelkasten knowledge management"
     },
     {
@@ -1135,384 +1081,8 @@
       "file_type": "rationale",
       "source_file": "01-tree-memory-proposal.md",
       "id": "graph_centrality",
-      "community": 6,
+      "community": 3,
       "norm_label": "centrality (graph theory)"
-    },
-    {
-      "label": "Formal Concept Analysis (FCA)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "formal_concept_analysis",
-      "community": 5,
-      "norm_label": "formal concept analysis (fca)"
-    },
-    {
-      "label": "Subgraph Isomorphism (VF2)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "subgraph_isomorphism_vf2",
-      "community": 3,
-      "norm_label": "subgraph isomorphism (vf2)"
-    },
-    {
-      "label": "Sparse Distributed Memory (SDM)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "sparse_distributed_memory",
-      "community": 5,
-      "norm_label": "sparse distributed memory (sdm)"
-    },
-    {
-      "label": "Hyperdimensional Computing (HDC/VSA)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "hyperdimensional_computing",
-      "community": 5,
-      "norm_label": "hyperdimensional computing (hdc/vsa)"
-    },
-    {
-      "label": "Graph Summarization (Supernode)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "graph_summarization",
-      "community": 5,
-      "norm_label": "graph summarization (supernode)"
-    },
-    {
-      "label": "ARC Cache Algorithm",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "arc_cache",
-      "community": 3,
-      "norm_label": "arc cache algorithm"
-    },
-    {
-      "label": "Phase 3A - Memory Safety & Archive Restore",
-      "file_type": "rationale",
-      "source_file": "PHASE3A_USER_TESTS.md",
-      "id": "phase3a",
-      "community": 3,
-      "norm_label": "phase 3a - memory safety & archive restore"
-    },
-    {
-      "label": "brain-meta.json (Global State)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "brain_meta_json",
-      "community": 3,
-      "norm_label": "brain-meta.json (global state)"
-    },
-    {
-      "label": "run-meta.json (Run Metadata)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "run_meta_json",
-      "community": 3,
-      "norm_label": "run-meta.json (run metadata)"
-    },
-    {
-      "label": "meta.json (Project Metadata)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "meta_json",
-      "community": 3,
-      "norm_label": "meta.json (project metadata)"
-    },
-    {
-      "label": ".archive/ Directory (Grace Period)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "archive_directory",
-      "community": 2,
-      "norm_label": ".archive/ directory (grace period)"
-    },
-    {
-      "label": "Obsidian Vault Integration",
-      "file_type": "rationale",
-      "source_file": "README.md",
-      "id": "obsidian_vault",
-      "community": 2,
-      "norm_label": "obsidian vault integration"
-    },
-    {
-      "label": "Context Injection (brainContextForCwd)",
-      "file_type": "rationale",
-      "source_file": "memory-system-improvement-handoff.md",
-      "id": "context_injection",
-      "community": 2,
-      "norm_label": "context injection (braincontextforcwd)"
-    },
-    {
-      "label": "Verifier-Aware Memory Fields",
-      "file_type": "rationale",
-      "source_file": "memory-system-improvement-handoff.md",
-      "id": "verifier_aware_memory",
-      "community": 3,
-      "norm_label": "verifier-aware memory fields"
-    },
-    {
-      "label": "Non-Negotiable Invariants",
-      "file_type": "rationale",
-      "source_file": "memory-system-improvement-handoff.md",
-      "id": "non_negotiable_invariants",
-      "community": 2,
-      "norm_label": "non-negotiable invariants"
-    },
-    {
-      "label": "8 Verification Gates",
-      "file_type": "rationale",
-      "source_file": "memory-system-improvement-handoff.md",
-      "id": "verification_gates",
-      "community": 3,
-      "norm_label": "8 verification gates"
-    },
-    {
-      "label": "Backward Compatibility Guarantee",
-      "file_type": "rationale",
-      "source_file": "memory-system-improvement-handoff.md",
-      "id": "backward_compatibility",
-      "community": 2,
-      "norm_label": "backward compatibility guarantee"
-    },
-    {
-      "label": "/memory save Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_save_command",
-      "community": 2,
-      "norm_label": "/memory save command"
-    },
-    {
-      "label": "/memory load Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_load_command",
-      "community": 2,
-      "norm_label": "/memory load command"
-    },
-    {
-      "label": "/memory list Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_list_command",
-      "community": 2,
-      "norm_label": "/memory list command"
-    },
-    {
-      "label": "/memory runs Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_runs_command",
-      "community": 2,
-      "norm_label": "/memory runs command"
-    },
-    {
-      "label": "/memory prune Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_prune_command",
-      "community": 3,
-      "norm_label": "/memory prune command"
-    },
-    {
-      "label": "/memory stats Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_stats_command",
-      "community": 2,
-      "norm_label": "/memory stats command"
-    },
-    {
-      "label": "/memory pin Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_pin_command",
-      "community": 2,
-      "norm_label": "/memory pin command"
-    },
-    {
-      "label": "/memory unpin Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_unpin_command",
-      "community": 2,
-      "norm_label": "/memory unpin command"
-    },
-    {
-      "label": "/memory gc Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_gc_command",
-      "community": 2,
-      "norm_label": "/memory gc command"
-    },
-    {
-      "label": "/memory keep Command",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_keep_command",
-      "community": 2,
-      "norm_label": "/memory keep command"
-    },
-    {
-      "label": "/memory-wiki Commands",
-      "file_type": "document",
-      "source_file": "TUTORIAL.md",
-      "id": "memory_wiki_commands",
-      "community": 2,
-      "norm_label": "/memory-wiki commands"
-    },
-    {
-      "label": "/graphify Skill",
-      "file_type": "document",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "graphify_skill",
-      "community": 6,
-      "norm_label": "/graphify skill"
-    },
-    {
-      "label": "Knowledge Graph Data Structure",
-      "file_type": "rationale",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "knowledge_graph",
-      "community": 2,
-      "norm_label": "knowledge graph data structure"
-    },
-    {
-      "label": "Community Detection (Louvain/Leiden)",
-      "file_type": "rationale",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "community_detection",
-      "community": 6,
-      "norm_label": "community detection (louvain/leiden)"
-    },
-    {
-      "label": "God Nodes (Centrality)",
-      "file_type": "rationale",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "god_nodes",
-      "community": 6,
-      "norm_label": "god nodes (centrality)"
-    },
-    {
-      "label": "Surprising Connections",
-      "file_type": "rationale",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "surprising_connections",
-      "community": 6,
-      "norm_label": "surprising connections"
-    },
-    {
-      "label": "EXTRACTED/INFERRED/AMBIGUOUS Edge Types",
-      "file_type": "rationale",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "extracted_edges",
-      "community": 6,
-      "norm_label": "extracted/inferred/ambiguous edge types"
-    },
-    {
-      "label": "Confidence Score System",
-      "file_type": "rationale",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "confidence_score",
-      "community": 6,
-      "norm_label": "confidence score system"
-    },
-    {
-      "label": "graphify-out/ Output Directory",
-      "file_type": "rationale",
-      "source_file": "skills/graphify/SKILL.md",
-      "id": "graphify_out_directory",
-      "community": 2,
-      "norm_label": "graphify-out/ output directory"
-    },
-    {
-      "label": "GRAPH_REPORT.md",
-      "file_type": "document",
-      "source_file": "README.md",
-      "id": "graph_report_md",
-      "community": 2,
-      "norm_label": "graph_report.md"
-    },
-    {
-      "label": "graph.json (Node-Link Data)",
-      "file_type": "rationale",
-      "source_file": "README.md",
-      "id": "graph_json",
-      "community": 2,
-      "norm_label": "graph.json (node-link data)"
-    },
-    {
-      "label": "graph.html (Interactive Viz)",
-      "file_type": "rationale",
-      "source_file": "README.md",
-      "id": "graph_html",
-      "community": 2,
-      "norm_label": "graph.html (interactive viz)"
-    },
-    {
-      "label": "FractalNode Schema (Level/Parent/Summary)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "fractal_node_schema",
-      "community": 5,
-      "norm_label": "fractalnode schema (level/parent/summary)"
-    },
-    {
-      "label": "Temperature System (Hot/Warm/Cold)",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "temperature_system",
-      "community": 3,
-      "norm_label": "temperature system (hot/warm/cold)"
-    },
-    {
-      "label": "Coherence Score for Compression",
-      "file_type": "rationale",
-      "source_file": "02-fractal-memory-proposal.md",
-      "id": "coherence_score",
-      "community": 5,
-      "norm_label": "coherence score for compression"
-    },
-    {
-      "label": "Project Slug (Normalized Name)",
-      "file_type": "rationale",
-      "source_file": "TUTORIAL.md",
-      "id": "project_slug",
-      "community": 3,
-      "norm_label": "project slug (normalized name)"
-    },
-    {
-      "label": "Run ID (ISO Timestamp)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "run_id",
-      "community": 3,
-      "norm_label": "run id (iso timestamp)"
-    },
-    {
-      "label": "graphify.ts Extension (1682 lines)",
-      "file_type": "code",
-      "source_file": "extensions/graphify.ts",
-      "id": "graphify_extensions",
-      "community": 2,
-      "norm_label": "graphify.ts extension (1682 lines)"
-    },
-    {
-      "label": "git-checkpoint.ts Extension",
-      "file_type": "code",
-      "source_file": "extensions/git-checkpoint.ts",
-      "id": "git_checkpoint_extension",
-      "community": 2,
-      "norm_label": "git-checkpoint.ts extension"
-    },
-    {
-      "label": "graphify-test-bundle.js",
-      "file_type": "code",
-      "source_file": "test/graphify-test-bundle.js",
-      "id": "graphify_test_bundle",
-      "community": 2,
-      "norm_label": "graphify-test-bundle.js"
     },
     {
       "label": "Staleness (Prune Signal, 35% weight)",
@@ -1547,14 +1117,6 @@
       "norm_label": "obsoletion (prune signal, 25% weight)"
     },
     {
-      "label": "Compression State Machine (Raw\u00e2\u2020\u2019Communities\u00e2\u2020\u2019Compressed\u00e2\u2020\u2019Frozen)",
-      "file_type": "rationale",
-      "source_file": "03-unified-plan.md",
-      "id": "compression_state",
-      "community": 5,
-      "norm_label": "compression state machine (rawa\u2020\u2019communitiesa\u2020\u2019compresseda\u2020\u2019frozen)"
-    },
-    {
       "label": "Jaccard Similarity for Run Comparison",
       "file_type": "rationale",
       "source_file": "01-tree-memory-proposal.md",
@@ -1563,36 +1125,204 @@
       "norm_label": "jaccard similarity for run comparison"
     },
     {
+      "label": "Fractal Memory Proposal",
+      "file_type": "document",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "fractal_memory_proposal",
+      "community": 6,
+      "norm_label": "fractal memory proposal"
+    },
+    {
+      "label": "HeatTracker (Temperature System)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "heattracker",
+      "community": 3,
+      "norm_label": "heattracker (temperature system)"
+    },
+    {
+      "label": "Cross-Project Archetypes",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "archetypes",
+      "community": 3,
+      "norm_label": "cross-project archetypes"
+    },
+    {
+      "label": "Fractal Compression",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "fractal_compression",
+      "community": 6,
+      "norm_label": "fractal compression"
+    },
+    {
+      "label": "Weisfeiler-Lehman Color Refinement",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "weisfeiler_lehman",
+      "community": 3,
+      "norm_label": "weisfeiler-lehman color refinement"
+    },
+    {
+      "label": "MinHash/LSH Semantic Deduplication",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "minhash_lsh",
+      "community": 3,
+      "norm_label": "minhash/lsh semantic deduplication"
+    },
+    {
+      "label": "Formal Concept Analysis (FCA)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "formal_concept_analysis",
+      "community": 6,
+      "norm_label": "formal concept analysis (fca)"
+    },
+    {
+      "label": "Subgraph Isomorphism (VF2)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "subgraph_isomorphism_vf2",
+      "community": 3,
+      "norm_label": "subgraph isomorphism (vf2)"
+    },
+    {
+      "label": "Sparse Distributed Memory (SDM)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "sparse_distributed_memory",
+      "community": 6,
+      "norm_label": "sparse distributed memory (sdm)"
+    },
+    {
+      "label": "Hyperdimensional Computing (HDC/VSA)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "hyperdimensional_computing",
+      "community": 6,
+      "norm_label": "hyperdimensional computing (hdc/vsa)"
+    },
+    {
+      "label": "Graph Summarization (Supernode)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "graph_summarization",
+      "community": 6,
+      "norm_label": "graph summarization (supernode)"
+    },
+    {
+      "label": "ARC Cache Algorithm",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "arc_cache",
+      "community": 3,
+      "norm_label": "arc cache algorithm"
+    },
+    {
+      "label": "FractalNode Schema (Level/Parent/Summary)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "fractal_node_schema",
+      "community": 6,
+      "norm_label": "fractalnode schema (level/parent/summary)"
+    },
+    {
+      "label": "Temperature System (Hot/Warm/Cold)",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "temperature_system",
+      "community": 3,
+      "norm_label": "temperature system (hot/warm/cold)"
+    },
+    {
+      "label": "Coherence Score for Compression",
+      "file_type": "rationale",
+      "source_file": "02-fractal-memory-proposal.md",
+      "id": "coherence_score",
+      "community": 6,
+      "norm_label": "coherence score for compression"
+    },
+    {
+      "label": "Unified Memory Management Plan",
+      "file_type": "document",
+      "source_file": "03-unified-plan.md",
+      "id": "unified_plan",
+      "community": 6,
+      "norm_label": "unified memory management plan"
+    },
+    {
+      "label": "Run-Level Storage (Phase 1)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "run_level_storage",
+      "community": 4,
+      "norm_label": "run-level storage (phase 1)"
+    },
+    {
+      "label": "Garbage Collection (Archive/Restore)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "garbage_collection",
+      "community": 4,
+      "norm_label": "garbage collection (archive/restore)"
+    },
+    {
+      "label": "brain-meta.json (Global State)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "brain_meta_json",
+      "community": 3,
+      "norm_label": "brain-meta.json (global state)"
+    },
+    {
+      "label": "run-meta.json (Run Metadata)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "run_meta_json",
+      "community": 3,
+      "norm_label": "run-meta.json (run metadata)"
+    },
+    {
+      "label": "meta.json (Project Metadata)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "meta_json",
+      "community": 3,
+      "norm_label": "meta.json (project metadata)"
+    },
+    {
+      "label": ".archive/ Directory (Grace Period)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "archive_directory",
+      "community": 4,
+      "norm_label": ".archive/ directory (grace period)"
+    },
+    {
+      "label": "Run ID (ISO Timestamp)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "run_id",
+      "community": 3,
+      "norm_label": "run id (iso timestamp)"
+    },
+    {
+      "label": "Compression State Machine (Raw\u00e2\u2020\u2019Communities\u00e2\u2020\u2019Compressed\u00e2\u2020\u2019Frozen)",
+      "file_type": "rationale",
+      "source_file": "03-unified-plan.md",
+      "id": "compression_state",
+      "community": 6,
+      "norm_label": "compression state machine (rawa\u2020\u2019communitiesa\u2020\u2019compresseda\u2020\u2019frozen)"
+    },
+    {
       "label": "30-Day Archive Grace Period",
       "file_type": "rationale",
       "source_file": "03-unified-plan.md",
       "id": "archive_grace_period",
-      "community": 2,
+      "community": 4,
       "norm_label": "30-day archive grace period"
-    },
-    {
-      "label": "archive-meta.json",
-      "file_type": "rationale",
-      "source_file": "TUTORIAL.md",
-      "id": "archive_meta_json",
-      "community": 2,
-      "norm_label": "archive-meta.json"
-    },
-    {
-      "label": "Phase 3A User Test Checklist (11 Tests)",
-      "file_type": "document",
-      "source_file": "PHASE3A_USER_TESTS.md",
-      "id": "user_test_checklist",
-      "community": 3,
-      "norm_label": "phase 3a user test checklist (11 tests)"
-    },
-    {
-      "label": "Implementation Handoff Document",
-      "file_type": "document",
-      "source_file": "memory-system-improvement-handoff.md",
-      "id": "implementation_handoff",
-      "community": 2,
-      "norm_label": "implementation handoff document"
     },
     {
       "label": "6-Phase Roadmap",
@@ -1603,11 +1333,291 @@
       "norm_label": "6-phase roadmap"
     },
     {
+      "label": "Context Injection (brainContextForCwd)",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "context_injection",
+      "community": 4,
+      "norm_label": "context injection (braincontextforcwd)"
+    },
+    {
+      "label": "Verifier-Aware Memory Fields",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "verifier_aware_memory",
+      "community": 3,
+      "norm_label": "verifier-aware memory fields"
+    },
+    {
+      "label": "Non-Negotiable Invariants",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "non_negotiable_invariants",
+      "community": 4,
+      "norm_label": "non-negotiable invariants"
+    },
+    {
+      "label": "8 Verification Gates",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "verification_gates",
+      "community": 3,
+      "norm_label": "8 verification gates"
+    },
+    {
+      "label": "Backward Compatibility Guarantee",
+      "file_type": "rationale",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "backward_compatibility",
+      "community": 4,
+      "norm_label": "backward compatibility guarantee"
+    },
+    {
+      "label": "Implementation Handoff Document",
+      "file_type": "document",
+      "source_file": "memory-system-improvement-handoff.md",
+      "id": "implementation_handoff",
+      "community": 4,
+      "norm_label": "implementation handoff document"
+    },
+    {
+      "label": "Phase 3A - Memory Safety & Archive Restore",
+      "file_type": "rationale",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "phase3a",
+      "community": 3,
+      "norm_label": "phase 3a - memory safety & archive restore"
+    },
+    {
+      "label": "Phase 3A User Test Checklist (11 Tests)",
+      "file_type": "document",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "id": "user_test_checklist",
+      "community": 3,
+      "norm_label": "phase 3a user test checklist (11 tests)"
+    },
+    {
+      "label": "graphify-brain Memory System",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "id": "graphify_brain",
+      "community": 4,
+      "norm_label": "graphify-brain memory system"
+    },
+    {
+      "label": "Pi Coding Agent Harness",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "id": "pi_coding_agent",
+      "community": 4,
+      "norm_label": "pi coding agent harness"
+    },
+    {
+      "label": "Obsidian Vault Integration",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "id": "obsidian_vault",
+      "community": 4,
+      "norm_label": "obsidian vault integration"
+    },
+    {
+      "label": "GRAPH_REPORT.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "id": "graph_report_md",
+      "community": 4,
+      "norm_label": "graph_report.md"
+    },
+    {
+      "label": "graph.json (Node-Link Data)",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "id": "graph_json",
+      "community": 4,
+      "norm_label": "graph.json (node-link data)"
+    },
+    {
+      "label": "graph.html (Interactive Viz)",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "id": "graph_html",
+      "community": 4,
+      "norm_label": "graph.html (interactive viz)"
+    },
+    {
+      "label": "/memory save Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_save_command",
+      "community": 4,
+      "norm_label": "/memory save command"
+    },
+    {
+      "label": "/memory load Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_load_command",
+      "community": 4,
+      "norm_label": "/memory load command"
+    },
+    {
+      "label": "/memory list Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_list_command",
+      "community": 4,
+      "norm_label": "/memory list command"
+    },
+    {
+      "label": "/memory runs Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_runs_command",
+      "community": 4,
+      "norm_label": "/memory runs command"
+    },
+    {
+      "label": "/memory prune Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_prune_command",
+      "community": 3,
+      "norm_label": "/memory prune command"
+    },
+    {
+      "label": "/memory stats Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_stats_command",
+      "community": 11,
+      "norm_label": "/memory stats command"
+    },
+    {
+      "label": "/memory pin Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_pin_command",
+      "community": 3,
+      "norm_label": "/memory pin command"
+    },
+    {
+      "label": "/memory unpin Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_unpin_command",
+      "community": 3,
+      "norm_label": "/memory unpin command"
+    },
+    {
+      "label": "/memory gc Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_gc_command",
+      "community": 4,
+      "norm_label": "/memory gc command"
+    },
+    {
+      "label": "/memory keep Command",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_keep_command",
+      "community": 4,
+      "norm_label": "/memory keep command"
+    },
+    {
+      "label": "/memory-wiki Commands",
+      "file_type": "document",
+      "source_file": "TUTORIAL.md",
+      "id": "memory_wiki_commands",
+      "community": 4,
+      "norm_label": "/memory-wiki commands"
+    },
+    {
+      "label": "Project Slug (Normalized Name)",
+      "file_type": "rationale",
+      "source_file": "TUTORIAL.md",
+      "id": "project_slug",
+      "community": 3,
+      "norm_label": "project slug (normalized name)"
+    },
+    {
+      "label": "archive-meta.json",
+      "file_type": "rationale",
+      "source_file": "TUTORIAL.md",
+      "id": "archive_meta_json",
+      "community": 4,
+      "norm_label": "archive-meta.json"
+    },
+    {
+      "label": "/graphify Skill",
+      "file_type": "document",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "graphify_skill",
+      "community": 7,
+      "norm_label": "/graphify skill"
+    },
+    {
+      "label": "Knowledge Graph Data Structure",
+      "file_type": "rationale",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "knowledge_graph",
+      "community": 4,
+      "norm_label": "knowledge graph data structure"
+    },
+    {
+      "label": "Community Detection (Louvain/Leiden)",
+      "file_type": "rationale",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "community_detection",
+      "community": 7,
+      "norm_label": "community detection (louvain/leiden)"
+    },
+    {
+      "label": "God Nodes (Centrality)",
+      "file_type": "rationale",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "god_nodes",
+      "community": 7,
+      "norm_label": "god nodes (centrality)"
+    },
+    {
+      "label": "Surprising Connections",
+      "file_type": "rationale",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "surprising_connections",
+      "community": 7,
+      "norm_label": "surprising connections"
+    },
+    {
+      "label": "EXTRACTED/INFERRED/AMBIGUOUS Edge Types",
+      "file_type": "rationale",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "extracted_edges",
+      "community": 7,
+      "norm_label": "extracted/inferred/ambiguous edge types"
+    },
+    {
+      "label": "Confidence Score System",
+      "file_type": "rationale",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "confidence_score",
+      "community": 7,
+      "norm_label": "confidence score system"
+    },
+    {
+      "label": "graphify-out/ Output Directory",
+      "file_type": "rationale",
+      "source_file": "skills/graphify/SKILL.md",
+      "id": "graphify_out_directory",
+      "community": 4,
+      "norm_label": "graphify-out/ output directory"
+    },
+    {
       "label": "AST Extraction (Structural)",
       "file_type": "rationale",
       "source_file": "skills/graphify/SKILL.md",
       "id": "ast_extraction",
-      "community": 6,
+      "community": 7,
       "norm_label": "ast extraction (structural)"
     },
     {
@@ -1615,7 +1625,7 @@
       "file_type": "rationale",
       "source_file": "skills/graphify/SKILL.md",
       "id": "semantic_extraction",
-      "community": 6,
+      "community": 7,
       "norm_label": "semantic extraction (llm-based)"
     },
     {
@@ -1623,8 +1633,291 @@
       "file_type": "rationale",
       "source_file": "skills/graphify/SKILL.md",
       "id": "graphify_python_package",
-      "community": 6,
+      "community": 7,
       "norm_label": "graphifyy python package"
+    },
+    {
+      "label": "Wiki Index",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "wiki_index",
+      "community": 2,
+      "norm_label": "wiki index"
+    },
+    {
+      "label": "Elevator Pitch (Wiki Overview)",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/01_OVERVIEW/_README.md",
+      "source_location": "L1",
+      "id": "wiki_overview",
+      "community": 2,
+      "norm_label": "elevator pitch (wiki overview)"
+    },
+    {
+      "label": "Architecture at a Glance",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/01_OVERVIEW/ARCHITECTURE_AT_A_GLANCE.md",
+      "source_location": "L1",
+      "id": "wiki_architecture",
+      "community": 2,
+      "norm_label": "architecture at a glance"
+    },
+    {
+      "label": "Plain-Language Glossary",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/01_OVERVIEW/GLOSSARY.md",
+      "source_location": "L1",
+      "id": "wiki_glossary",
+      "community": 2,
+      "norm_label": "plain-language glossary"
+    },
+    {
+      "label": "System Layers Index",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/_README.md",
+      "source_location": "L1",
+      "id": "wiki_layers_index",
+      "community": 2,
+      "norm_label": "system layers index"
+    },
+    {
+      "label": "Layer 1: Storage (Wiki)",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_01_Storage.md",
+      "source_location": "L1",
+      "id": "wiki_layer_storage",
+      "community": 2,
+      "norm_label": "layer 1: storage (wiki)"
+    },
+    {
+      "label": "Layer 2: Scoring (Wiki)",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_02_Scoring.md",
+      "source_location": "L1",
+      "id": "wiki_layer_scoring",
+      "community": 2,
+      "norm_label": "layer 2: scoring (wiki)"
+    },
+    {
+      "label": "Layer 3: Temperature (Wiki)",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_03_Temperature.md",
+      "source_location": "L1",
+      "id": "wiki_layer_temperature",
+      "community": 2,
+      "norm_label": "layer 3: temperature (wiki)"
+    },
+    {
+      "label": "Layer 4: Compression (Wiki)",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_04_Compression.md",
+      "source_location": "L1",
+      "id": "wiki_layer_compression",
+      "community": 2,
+      "norm_label": "layer 4: compression (wiki)"
+    },
+    {
+      "label": "Layer 5: Archetypes (Wiki)",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_05_Archetypes.md",
+      "source_location": "L1",
+      "id": "wiki_layer_archetypes",
+      "community": 2,
+      "norm_label": "layer 5: archetypes (wiki)"
+    },
+    {
+      "label": "Community Narratives Index",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "source_location": "L1",
+      "id": "wiki_communities_index",
+      "community": 2,
+      "norm_label": "community narratives index"
+    },
+    {
+      "label": "Community Narrative: Implementation Core - The Engine Room",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Implementations.md",
+      "source_location": "L1",
+      "id": "wiki_community_implementations",
+      "community": 2,
+      "norm_label": "community narrative: implementation core - the engine room"
+    },
+    {
+      "label": "Community Narrative: Testing and Utilities - The Quality Desk",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Testing.md",
+      "source_location": "L1",
+      "id": "wiki_community_testing",
+      "community": 2,
+      "norm_label": "community narrative: testing and utilities - the quality desk"
+    },
+    {
+      "label": "Community Narrative: Memory Architecture - The Blueprint",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Architecture.md",
+      "source_location": "L1",
+      "id": "wiki_community_architecture",
+      "community": 2,
+      "norm_label": "community narrative: memory architecture - the blueprint"
+    },
+    {
+      "label": "Community Narrative: Pruning and Temperature - The Librarian",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Pruning.md",
+      "source_location": "L1",
+      "id": "wiki_community_pruning",
+      "community": 2,
+      "norm_label": "community narrative: pruning and temperature - the librarian"
+    },
+    {
+      "label": "Community Narrative: Heat Tracking - The Thermometer Class",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Heattracker.md",
+      "source_location": "L1",
+      "id": "wiki_community_heattracker",
+      "community": 2,
+      "norm_label": "community narrative: heat tracking - the thermometer class"
+    },
+    {
+      "label": "Community Narrative: Design Proposals - The Drawing Board",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Design.md",
+      "source_location": "L1",
+      "id": "wiki_community_design",
+      "community": 2,
+      "norm_label": "community narrative: design proposals - the drawing board"
+    },
+    {
+      "label": "Community Narrative: Graphify Skill - The Engine Itself",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Graphify.md",
+      "source_location": "L1",
+      "id": "wiki_community_graphify",
+      "community": 2,
+      "norm_label": "community narrative: graphify skill - the engine itself"
+    },
+    {
+      "label": "Community Narrative: Obsidian Integration - The Showcase",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/COMMUNITY_Obsidian.md",
+      "source_location": "L1",
+      "id": "wiki_community_obsidian",
+      "community": 2,
+      "norm_label": "community narrative: obsidian integration - the showcase"
+    },
+    {
+      "label": "Decision Log Index",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/04_DECISIONS/_README.md",
+      "source_location": "L1",
+      "id": "wiki_decisions_index",
+      "community": 2,
+      "norm_label": "decision log index"
+    },
+    {
+      "label": "Decision: Tree + Graph Hybrid",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_tree_plus_graph.md",
+      "source_location": "L1",
+      "id": "wiki_decision_tree_plus_graph",
+      "community": 2,
+      "norm_label": "decision: tree + graph hybrid"
+    },
+    {
+      "label": "Decision: 30-Day Archive Grace Period",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_30_day_archive.md",
+      "source_location": "L1",
+      "id": "wiki_decision_30_day_archive",
+      "community": 2,
+      "norm_label": "decision: 30-day archive grace period"
+    },
+    {
+      "label": "Decision: 5 Signals for Pruning",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_5_signal_prune.md",
+      "source_location": "L1",
+      "id": "wiki_decision_5_signal_prune",
+      "community": 2,
+      "norm_label": "decision: 5 signals for pruning"
+    },
+    {
+      "label": "Decision: Temperature Over LRU",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_temperature_over_lru.md",
+      "source_location": "L1",
+      "id": "wiki_decision_temperature_over_lru",
+      "community": 2,
+      "norm_label": "decision: temperature over lru"
+    },
+    {
+      "label": "Decision: Obsidian as Viewer",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_obsidian_viewer.md",
+      "source_location": "L1",
+      "id": "wiki_decision_obsidian_viewer",
+      "community": 2,
+      "norm_label": "decision: obsidian as viewer"
+    },
+    {
+      "label": "LLM Instructions Index",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/_README.md",
+      "source_location": "L1",
+      "id": "wiki_llm_index",
+      "community": 2,
+      "norm_label": "llm instructions index"
+    },
+    {
+      "label": "Prompt Templates",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/PROMPT_TEMPLATES.md",
+      "source_location": "L1",
+      "id": "wiki_llm_templates",
+      "community": 2,
+      "norm_label": "prompt templates"
+    },
+    {
+      "label": "Instruction: Setting Up a Feature",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/INSTRUCTION_setup.md",
+      "source_location": "L1",
+      "id": "wiki_llm_setup",
+      "community": 2,
+      "norm_label": "instruction: setting up a feature"
+    },
+    {
+      "label": "Instruction: Architecture Review",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/INSTRUCTION_architecture_review.md",
+      "source_location": "L1",
+      "id": "wiki_llm_review",
+      "community": 2,
+      "norm_label": "instruction: architecture review"
+    },
+    {
+      "label": "Instruction: Adding a Feature",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/INSTRUCTION_feature_add.md",
+      "source_location": "L1",
+      "id": "wiki_llm_feature",
+      "community": 2,
+      "norm_label": "instruction: adding a feature"
+    },
+    {
+      "label": "Dual-Audience Architecture Wiki System",
+      "file_type": "rationale",
+      "source_file": "graphify-out/wiki",
+      "source_location": "L1",
+      "id": "wiki_system_concept",
+      "community": 2,
+      "norm_label": "dual-audience architecture wiki system"
     }
   ],
   "links": [
@@ -1664,7 +1957,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_ensurebraindir",
@@ -1674,7 +1967,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_ensurevault",
@@ -1684,7 +1977,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_slugify",
@@ -1694,7 +1987,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_splitargs",
@@ -1704,7 +1997,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_hasflag",
@@ -1714,7 +2007,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_getflagvalue",
@@ -1724,7 +2017,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_positionalargs",
@@ -1734,7 +2027,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L68",
+      "source_location": "L69",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_projectdirforslug",
@@ -1744,7 +2037,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L72",
+      "source_location": "L73",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_rundirfor",
@@ -1754,7 +2047,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L76",
+      "source_location": "L77",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_archiverundirfor",
@@ -1764,7 +2057,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L132",
+      "source_location": "L133",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_heattracker",
@@ -1774,7 +2067,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L263",
+      "source_location": "L264",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_extractsections",
@@ -1784,7 +2077,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L281",
+      "source_location": "L282",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_rebuildbrainindex",
@@ -1794,7 +2087,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L324",
+      "source_location": "L325",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_braincontextforcwd",
@@ -1804,7 +2097,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L382",
+      "source_location": "L383",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_copyobsidiantovault",
@@ -1814,7 +2107,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L432",
+      "source_location": "L433",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_rebuildvaultindex",
@@ -1824,7 +2117,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L569",
+      "source_location": "L570",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_openinobsidian",
@@ -1834,7 +2127,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L711",
+      "source_location": "L712",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_dirsize",
@@ -1844,7 +2137,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L726",
+      "source_location": "L727",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_formatbytes",
@@ -1854,7 +2147,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L732",
+      "source_location": "L733",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_countrunartifacts",
@@ -1864,7 +2157,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L741",
+      "source_location": "L742",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_normalizestringarray",
@@ -1874,7 +2167,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L745",
+      "source_location": "L746",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_normalizerunmeta",
@@ -1884,7 +2177,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L806",
+      "source_location": "L807",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_loadrunmeta",
@@ -1894,7 +2187,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L820",
+      "source_location": "L821",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_writerunmeta",
@@ -1904,7 +2197,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L826",
+      "source_location": "L827",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_recordrunaccess",
@@ -1914,7 +2207,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L845",
+      "source_location": "L846",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_adddaysiso",
@@ -1924,7 +2217,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L853",
+      "source_location": "L854",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlesave",
@@ -1934,7 +2227,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1004",
+      "source_location": "L1005",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlelist",
@@ -1944,7 +2237,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1020",
+      "source_location": "L1119",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handleload",
@@ -1954,7 +2247,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1070",
+      "source_location": "L1169",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handleloadrun",
@@ -1964,7 +2257,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1114",
+      "source_location": "L1213",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handleruns",
@@ -1974,7 +2267,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1162",
+      "source_location": "L1261",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_getnodelabels",
@@ -1984,7 +2277,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1172",
+      "source_location": "L1271",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_computeprunescores",
@@ -1994,7 +2287,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1264",
+      "source_location": "L1363",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_selectmemoryforcontext",
@@ -2004,7 +2297,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1293",
+      "source_location": "L1392",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_findrunmetas",
@@ -2014,7 +2307,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1307",
+      "source_location": "L1406",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_findrunmeta",
@@ -2024,7 +2317,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1312",
+      "source_location": "L1411",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_resolveprojectrunfromargs",
@@ -2034,7 +2327,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1346",
+      "source_location": "L1445",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_getprojectslugsforcommand",
@@ -2044,7 +2337,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1357",
+      "source_location": "L1456",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handleprune",
@@ -2054,7 +2347,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1380",
+      "source_location": "L1479",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_pinmeta",
@@ -2064,7 +2357,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1391",
+      "source_location": "L1490",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlepin",
@@ -2074,7 +2367,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1403",
+      "source_location": "L1502",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handleunpin",
@@ -2084,7 +2377,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1416",
+      "source_location": "L1515",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_gccandidatereason",
@@ -2094,7 +2387,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1420",
+      "source_location": "L1519",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlegc",
@@ -2104,7 +2397,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1467",
+      "source_location": "L1566",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_findarchivedrun",
@@ -2114,7 +2407,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1488",
+      "source_location": "L1587",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlekeep",
@@ -2124,7 +2417,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1511",
+      "source_location": "L1610",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlestats",
@@ -2134,7 +2427,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1568",
+      "source_location": "L1667",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlewikisynccurrent",
@@ -2144,7 +2437,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1595",
+      "source_location": "L1694",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlewikisyncall",
@@ -2154,7 +2447,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1639",
+      "source_location": "L1738",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlewikiopen",
@@ -2164,7 +2457,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1661",
+      "source_location": "L1760",
       "weight": 1.0,
       "source": "extensions_graphify_ts",
       "target": "extensions_graphify_handlewikinotes",
@@ -2175,7 +2468,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L137",
+      "source_location": "L138",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_constructor",
       "target": "extensions_graphify_ensurebraindir",
@@ -2186,7 +2479,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L282",
+      "source_location": "L283",
       "weight": 1.0,
       "source": "extensions_graphify_rebuildbrainindex",
       "target": "extensions_graphify_ensurebraindir",
@@ -2197,7 +2490,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L875",
+      "source_location": "L876",
       "weight": 1.0,
       "source": "extensions_graphify_handlesave",
       "target": "extensions_graphify_ensurebraindir",
@@ -2208,7 +2501,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L433",
+      "source_location": "L434",
       "weight": 1.0,
       "source": "extensions_graphify_rebuildvaultindex",
       "target": "extensions_graphify_ensurevault",
@@ -2219,7 +2512,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1580",
+      "source_location": "L1679",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikisynccurrent",
       "target": "extensions_graphify_ensurevault",
@@ -2230,7 +2523,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1598",
+      "source_location": "L1697",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikisyncall",
       "target": "extensions_graphify_ensurevault",
@@ -2241,7 +2534,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1640",
+      "source_location": "L1739",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikiopen",
       "target": "extensions_graphify_ensurevault",
@@ -2252,7 +2545,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1662",
+      "source_location": "L1761",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikinotes",
       "target": "extensions_graphify_ensurevault",
@@ -2263,7 +2556,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L873",
+      "source_location": "L874",
       "weight": 1.0,
       "source": "extensions_graphify_handlesave",
       "target": "extensions_graphify_slugify",
@@ -2274,7 +2567,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1030",
+      "source_location": "L1129",
       "weight": 1.0,
       "source": "extensions_graphify_handleload",
       "target": "extensions_graphify_slugify",
@@ -2285,7 +2578,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1081",
+      "source_location": "L1180",
       "weight": 1.0,
       "source": "extensions_graphify_handleloadrun",
       "target": "extensions_graphify_slugify",
@@ -2296,7 +2589,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1119",
+      "source_location": "L1218",
       "weight": 1.0,
       "source": "extensions_graphify_handleruns",
       "target": "extensions_graphify_slugify",
@@ -2307,7 +2600,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1318",
+      "source_location": "L1417",
       "weight": 1.0,
       "source": "extensions_graphify_resolveprojectrunfromargs",
       "target": "extensions_graphify_slugify",
@@ -2318,7 +2611,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1347",
+      "source_location": "L1446",
       "weight": 1.0,
       "source": "extensions_graphify_getprojectslugsforcommand",
       "target": "extensions_graphify_slugify",
@@ -2329,7 +2622,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1360",
+      "source_location": "L1459",
       "weight": 1.0,
       "source": "extensions_graphify_handleprune",
       "target": "extensions_graphify_slugify",
@@ -2340,7 +2633,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1393",
+      "source_location": "L1492",
       "weight": 1.0,
       "source": "extensions_graphify_handlepin",
       "target": "extensions_graphify_slugify",
@@ -2351,7 +2644,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1405",
+      "source_location": "L1504",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_slugify",
@@ -2362,7 +2655,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1469",
+      "source_location": "L1568",
       "weight": 1.0,
       "source": "extensions_graphify_findarchivedrun",
       "target": "extensions_graphify_slugify",
@@ -2373,7 +2666,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1513",
+      "source_location": "L1612",
       "weight": 1.0,
       "source": "extensions_graphify_handlestats",
       "target": "extensions_graphify_slugify",
@@ -2384,7 +2677,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1582",
+      "source_location": "L1681",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikisynccurrent",
       "target": "extensions_graphify_slugify",
@@ -2395,7 +2688,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1313",
+      "source_location": "L1412",
       "weight": 1.0,
       "source": "extensions_graphify_resolveprojectrunfromargs",
       "target": "extensions_graphify_splitargs",
@@ -2406,7 +2699,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1358",
+      "source_location": "L1457",
       "weight": 1.0,
       "source": "extensions_graphify_handleprune",
       "target": "extensions_graphify_splitargs",
@@ -2417,7 +2710,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1422",
+      "source_location": "L1521",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_splitargs",
@@ -2428,7 +2721,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1489",
+      "source_location": "L1588",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_splitargs",
@@ -2439,7 +2732,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1423",
+      "source_location": "L1522",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_hasflag",
@@ -2450,7 +2743,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1314",
+      "source_location": "L1413",
       "weight": 1.0,
       "source": "extensions_graphify_resolveprojectrunfromargs",
       "target": "extensions_graphify_getflagvalue",
@@ -2461,7 +2754,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1490",
+      "source_location": "L1589",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_getflagvalue",
@@ -2472,7 +2765,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1315",
+      "source_location": "L1414",
       "weight": 1.0,
       "source": "extensions_graphify_resolveprojectrunfromargs",
       "target": "extensions_graphify_positionalargs",
@@ -2483,7 +2776,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1359",
+      "source_location": "L1458",
       "weight": 1.0,
       "source": "extensions_graphify_handleprune",
       "target": "extensions_graphify_positionalargs",
@@ -2494,7 +2787,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1424",
+      "source_location": "L1523",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_positionalargs",
@@ -2505,7 +2798,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1491",
+      "source_location": "L1590",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_positionalargs",
@@ -2516,7 +2809,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L73",
+      "source_location": "L74",
       "weight": 1.0,
       "source": "extensions_graphify_rundirfor",
       "target": "extensions_graphify_projectdirforslug",
@@ -2527,7 +2820,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1265",
+      "source_location": "L1364",
       "weight": 1.0,
       "source": "extensions_graphify_selectmemoryforcontext",
       "target": "extensions_graphify_projectdirforslug",
@@ -2538,7 +2831,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1324",
+      "source_location": "L1423",
       "weight": 1.0,
       "source": "extensions_graphify_resolveprojectrunfromargs",
       "target": "extensions_graphify_projectdirforslug",
@@ -2549,7 +2842,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1412",
+      "source_location": "L1511",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_projectdirforslug",
@@ -2560,7 +2853,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1432",
+      "source_location": "L1531",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_projectdirforslug",
@@ -2571,7 +2864,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L807",
+      "source_location": "L808",
       "weight": 1.0,
       "source": "extensions_graphify_loadrunmeta",
       "target": "extensions_graphify_rundirfor",
@@ -2582,7 +2875,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L821",
+      "source_location": "L822",
       "weight": 1.0,
       "source": "extensions_graphify_writerunmeta",
       "target": "extensions_graphify_rundirfor",
@@ -2593,7 +2886,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L828",
+      "source_location": "L829",
       "weight": 1.0,
       "source": "extensions_graphify_recordrunaccess",
       "target": "extensions_graphify_rundirfor",
@@ -2604,7 +2897,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1298",
+      "source_location": "L1397",
       "weight": 1.0,
       "source": "extensions_graphify_findrunmetas",
       "target": "extensions_graphify_rundirfor",
@@ -2615,7 +2908,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1319",
+      "source_location": "L1418",
       "weight": 1.0,
       "source": "extensions_graphify_resolveprojectrunfromargs",
       "target": "extensions_graphify_rundirfor",
@@ -2626,7 +2919,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1395",
+      "source_location": "L1494",
       "weight": 1.0,
       "source": "extensions_graphify_handlepin",
       "target": "extensions_graphify_rundirfor",
@@ -2637,7 +2930,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1407",
+      "source_location": "L1506",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_rundirfor",
@@ -2648,7 +2941,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1439",
+      "source_location": "L1538",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_rundirfor",
@@ -2659,7 +2952,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1495",
+      "source_location": "L1594",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_rundirfor",
@@ -2670,7 +2963,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1440",
+      "source_location": "L1539",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_archiverundirfor",
@@ -2681,7 +2974,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1470",
+      "source_location": "L1569",
       "weight": 1.0,
       "source": "extensions_graphify_findarchivedrun",
       "target": "extensions_graphify_archiverundirfor",
@@ -2691,7 +2984,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L136",
+      "source_location": "L137",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_constructor",
@@ -2701,7 +2994,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L142",
+      "source_location": "L143",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_load",
@@ -2711,7 +3004,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L168",
+      "source_location": "L169",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_save",
@@ -2721,7 +3014,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L173",
+      "source_location": "L174",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_key",
@@ -2731,7 +3024,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L177",
+      "source_location": "L178",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_getormigrateentry",
@@ -2741,7 +3034,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L190",
+      "source_location": "L191",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_seedhot",
@@ -2751,7 +3044,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L199",
+      "source_location": "L200",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_recordaccess",
@@ -2761,7 +3054,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L215",
+      "source_location": "L216",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_decaytemperatures",
@@ -2771,7 +3064,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L242",
+      "source_location": "L243",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_gettemperature",
@@ -2781,7 +3074,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L246",
+      "source_location": "L247",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_getentry",
@@ -2791,7 +3084,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L250",
+      "source_location": "L251",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker",
       "target": "extensions_graphify_heattracker_getstats",
@@ -2802,7 +3095,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L139",
+      "source_location": "L140",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_constructor",
       "target": "extensions_graphify_heattracker_load",
@@ -2813,7 +3106,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L196",
+      "source_location": "L197",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_seedhot",
       "target": "extensions_graphify_heattracker_save",
@@ -2824,7 +3117,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L212",
+      "source_location": "L213",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_recordaccess",
       "target": "extensions_graphify_heattracker_save",
@@ -2835,7 +3128,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L238",
+      "source_location": "L239",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_decaytemperatures",
       "target": "extensions_graphify_heattracker_save",
@@ -2846,7 +3139,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L178",
+      "source_location": "L179",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_getormigrateentry",
       "target": "extensions_graphify_heattracker_key",
@@ -2857,7 +3150,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L191",
+      "source_location": "L192",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_seedhot",
       "target": "extensions_graphify_heattracker_key",
@@ -2868,7 +3161,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L206",
+      "source_location": "L207",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_recordaccess",
       "target": "extensions_graphify_heattracker_key",
@@ -2879,7 +3172,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L200",
+      "source_location": "L201",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_recordaccess",
       "target": "extensions_graphify_heattracker_getormigrateentry",
@@ -2890,7 +3183,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L243",
+      "source_location": "L244",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_gettemperature",
       "target": "extensions_graphify_heattracker_getormigrateentry",
@@ -2901,7 +3194,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L247",
+      "source_location": "L248",
       "weight": 1.0,
       "source": "extensions_graphify_heattracker_getentry",
       "target": "extensions_graphify_heattracker_getormigrateentry",
@@ -2912,7 +3205,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L969",
+      "source_location": "L970",
       "weight": 1.0,
       "source": "extensions_graphify_handlesave",
       "target": "extensions_graphify_heattracker_seedhot",
@@ -2923,7 +3216,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L827",
+      "source_location": "L828",
       "weight": 1.0,
       "source": "extensions_graphify_recordrunaccess",
       "target": "extensions_graphify_heattracker_recordaccess",
@@ -2934,7 +3227,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1207",
+      "source_location": "L1306",
       "weight": 1.0,
       "source": "extensions_graphify_computeprunescores",
       "target": "extensions_graphify_heattracker_gettemperature",
@@ -2945,7 +3238,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1281",
+      "source_location": "L1380",
       "weight": 1.0,
       "source": "extensions_graphify_selectmemoryforcontext",
       "target": "extensions_graphify_heattracker_gettemperature",
@@ -2956,7 +3249,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L832",
+      "source_location": "L833",
       "weight": 1.0,
       "source": "extensions_graphify_recordrunaccess",
       "target": "extensions_graphify_heattracker_getentry",
@@ -2967,7 +3260,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1216",
+      "source_location": "L1315",
       "weight": 1.0,
       "source": "extensions_graphify_computeprunescores",
       "target": "extensions_graphify_heattracker_getentry",
@@ -2978,7 +3271,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L349",
+      "source_location": "L350",
       "weight": 1.0,
       "source": "extensions_graphify_braincontextforcwd",
       "target": "extensions_graphify_extractsections",
@@ -2989,7 +3282,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L997",
+      "source_location": "L998",
       "weight": 1.0,
       "source": "extensions_graphify_handlesave",
       "target": "extensions_graphify_rebuildbrainindex",
@@ -3000,7 +3293,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1583",
+      "source_location": "L1682",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikisynccurrent",
       "target": "extensions_graphify_copyobsidiantovault",
@@ -3011,7 +3304,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1616",
+      "source_location": "L1715",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikisyncall",
       "target": "extensions_graphify_copyobsidiantovault",
@@ -3022,7 +3315,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1584",
+      "source_location": "L1683",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikisynccurrent",
       "target": "extensions_graphify_rebuildvaultindex",
@@ -3033,7 +3326,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1620",
+      "source_location": "L1719",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikisyncall",
       "target": "extensions_graphify_rebuildvaultindex",
@@ -3044,7 +3337,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1641",
+      "source_location": "L1740",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikiopen",
       "target": "extensions_graphify_rebuildvaultindex",
@@ -3055,7 +3348,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1643",
+      "source_location": "L1742",
       "weight": 1.0,
       "source": "extensions_graphify_handlewikiopen",
       "target": "extensions_graphify_openinobsidian",
@@ -3066,7 +3359,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1517",
+      "source_location": "L1616",
       "weight": 1.0,
       "source": "extensions_graphify_handlestats",
       "target": "extensions_graphify_dirsize",
@@ -3077,7 +3370,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1528",
+      "source_location": "L1627",
       "weight": 1.0,
       "source": "extensions_graphify_handlestats",
       "target": "extensions_graphify_formatbytes",
@@ -3088,7 +3381,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L776",
+      "source_location": "L777",
       "weight": 1.0,
       "source": "extensions_graphify_normalizerunmeta",
       "target": "extensions_graphify_countrunartifacts",
@@ -3099,7 +3392,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L799",
+      "source_location": "L800",
       "weight": 1.0,
       "source": "extensions_graphify_normalizerunmeta",
       "target": "extensions_graphify_normalizestringarray",
@@ -3110,7 +3403,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L817",
+      "source_location": "L818",
       "weight": 1.0,
       "source": "extensions_graphify_loadrunmeta",
       "target": "extensions_graphify_normalizerunmeta",
@@ -3121,7 +3414,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L938",
+      "source_location": "L939",
       "weight": 1.0,
       "source": "extensions_graphify_handlesave",
       "target": "extensions_graphify_normalizerunmeta",
@@ -3132,7 +3425,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1500",
+      "source_location": "L1599",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_normalizerunmeta",
@@ -3143,7 +3436,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L830",
+      "source_location": "L831",
       "weight": 1.0,
       "source": "extensions_graphify_recordrunaccess",
       "target": "extensions_graphify_loadrunmeta",
@@ -3154,7 +3447,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1187",
+      "source_location": "L1286",
       "weight": 1.0,
       "source": "extensions_graphify_computeprunescores",
       "target": "extensions_graphify_loadrunmeta",
@@ -3165,7 +3458,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1277",
+      "source_location": "L1376",
       "weight": 1.0,
       "source": "extensions_graphify_selectmemoryforcontext",
       "target": "extensions_graphify_loadrunmeta",
@@ -3176,7 +3469,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1301",
+      "source_location": "L1400",
       "weight": 1.0,
       "source": "extensions_graphify_findrunmetas",
       "target": "extensions_graphify_loadrunmeta",
@@ -3187,7 +3480,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1396",
+      "source_location": "L1495",
       "weight": 1.0,
       "source": "extensions_graphify_handlepin",
       "target": "extensions_graphify_loadrunmeta",
@@ -3198,7 +3491,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1408",
+      "source_location": "L1507",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_loadrunmeta",
@@ -3209,7 +3502,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1499",
+      "source_location": "L1598",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_loadrunmeta",
@@ -3220,7 +3513,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L842",
+      "source_location": "L843",
       "weight": 1.0,
       "source": "extensions_graphify_recordrunaccess",
       "target": "extensions_graphify_writerunmeta",
@@ -3231,7 +3524,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L968",
+      "source_location": "L969",
       "weight": 1.0,
       "source": "extensions_graphify_handlesave",
       "target": "extensions_graphify_writerunmeta",
@@ -3242,7 +3535,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1258",
+      "source_location": "L1357",
       "weight": 1.0,
       "source": "extensions_graphify_computeprunescores",
       "target": "extensions_graphify_writerunmeta",
@@ -3253,7 +3546,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1399",
+      "source_location": "L1498",
       "weight": 1.0,
       "source": "extensions_graphify_handlepin",
       "target": "extensions_graphify_writerunmeta",
@@ -3264,7 +3557,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1411",
+      "source_location": "L1510",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_writerunmeta",
@@ -3275,7 +3568,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1453",
+      "source_location": "L1552",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_writerunmeta",
@@ -3286,7 +3579,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1507",
+      "source_location": "L1606",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_writerunmeta",
@@ -3297,7 +3590,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1060",
+      "source_location": "L1159",
       "weight": 1.0,
       "source": "extensions_graphify_handleload",
       "target": "extensions_graphify_recordrunaccess",
@@ -3308,7 +3601,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1105",
+      "source_location": "L1204",
       "weight": 1.0,
       "source": "extensions_graphify_handleloadrun",
       "target": "extensions_graphify_recordrunaccess",
@@ -3319,7 +3612,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1452",
+      "source_location": "L1551",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_adddaysiso",
@@ -3330,7 +3623,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1196",
+      "source_location": "L1295",
       "weight": 1.0,
       "source": "extensions_graphify_computeprunescores",
       "target": "extensions_graphify_getnodelabels",
@@ -3341,7 +3634,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1363",
+      "source_location": "L1462",
       "weight": 1.0,
       "source": "extensions_graphify_handleprune",
       "target": "extensions_graphify_computeprunescores",
@@ -3352,7 +3645,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1412",
+      "source_location": "L1511",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_computeprunescores",
@@ -3363,7 +3656,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1434",
+      "source_location": "L1533",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_computeprunescores",
@@ -3374,7 +3667,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1516",
+      "source_location": "L1615",
       "weight": 1.0,
       "source": "extensions_graphify_handlestats",
       "target": "extensions_graphify_computeprunescores",
@@ -3385,7 +3678,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1308",
+      "source_location": "L1407",
       "weight": 1.0,
       "source": "extensions_graphify_findrunmeta",
       "target": "extensions_graphify_findrunmetas",
@@ -3396,7 +3689,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1333",
+      "source_location": "L1432",
       "weight": 1.0,
       "source": "extensions_graphify_resolveprojectrunfromargs",
       "target": "extensions_graphify_findrunmetas",
@@ -3407,7 +3700,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1393",
+      "source_location": "L1492",
       "weight": 1.0,
       "source": "extensions_graphify_handlepin",
       "target": "extensions_graphify_resolveprojectrunfromargs",
@@ -3418,7 +3711,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1405",
+      "source_location": "L1504",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_resolveprojectrunfromargs",
@@ -3429,7 +3722,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1425",
+      "source_location": "L1524",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_getprojectslugsforcommand",
@@ -3440,7 +3733,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1398",
+      "source_location": "L1497",
       "weight": 1.0,
       "source": "extensions_graphify_handlepin",
       "target": "extensions_graphify_pinmeta",
@@ -3451,7 +3744,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1410",
+      "source_location": "L1509",
       "weight": 1.0,
       "source": "extensions_graphify_handleunpin",
       "target": "extensions_graphify_pinmeta",
@@ -3462,7 +3755,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1501",
+      "source_location": "L1600",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_pinmeta",
@@ -3473,7 +3766,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1441",
+      "source_location": "L1540",
       "weight": 1.0,
       "source": "extensions_graphify_handlegc",
       "target": "extensions_graphify_gccandidatereason",
@@ -3484,7 +3777,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "extensions/graphify.ts",
-      "source_location": "L1493",
+      "source_location": "L1592",
       "weight": 1.0,
       "source": "extensions_graphify_handlekeep",
       "target": "extensions_graphify_findarchivedrun",
@@ -4300,92 +4593,12 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "part_of",
+      "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "pi_coding_agent"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "knowledge_graph"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "run_level_storage"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "pruning_system"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "graphify_extensions"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "memory_save_command"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "memory_list_command"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "memory_load_command"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "memory_gc_command"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "memory_wiki_commands"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "graphify_brain",
-      "target": "obsidian_vault"
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "zettelkasten",
+      "target": "tree_memory_proposal"
     },
     {
       "relation": "conceptually_related_to",
@@ -4394,14 +4607,6 @@
       "source_file": "03-unified-plan.md",
       "source": "tree_memory_proposal",
       "target": "unified_plan"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "zettelkasten",
-      "target": "tree_memory_proposal"
     },
     {
       "relation": "semantically_similar_to",
@@ -4412,12 +4617,196 @@
       "target": "fractal_memory_proposal"
     },
     {
-      "relation": "conceptually_related_to",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "pruning_system",
+      "target": "prune_score_staleness"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "pruning_system",
+      "target": "prune_score_redundancy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "pruning_system",
+      "target": "prune_score_low_signal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "pruning_system",
+      "target": "prune_score_obsoletion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "pruning_system",
+      "target": "pinning"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "cache_eviction_lru",
+      "target": "pruning_system"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "graph_centrality",
+      "target": "pruning_system"
+    },
+    {
+      "relation": "implements",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "03-unified-plan.md",
-      "source": "fractal_memory_proposal",
-      "target": "unified_plan"
+      "source": "pruning_system",
+      "target": "memory_prune_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "six_phase_roadmap",
+      "target": "pruning_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "pruning_system"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "run_meta_json",
+      "target": "pinning"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "non_negotiable_invariants",
+      "target": "pinning"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "pinning",
+      "target": "memory_pin_command"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "pinning",
+      "target": "memory_unpin_command"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "ebbinghaus_forgetting",
+      "target": "prune_score_staleness"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "arc_cache",
+      "target": "cache_eviction_lru"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skills/graphify/SKILL.md",
+      "source": "graph_centrality",
+      "target": "god_nodes"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "03-unified-plan.md",
+      "source": "temperature_system",
+      "target": "prune_score_staleness"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "run_meta_json",
+      "target": "prune_score_staleness"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-tree-memory-proposal.md",
+      "source": "jaccard_similarity",
+      "target": "prune_score_redundancy"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "run_meta_json",
+      "target": "prune_score_redundancy"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "run_meta_json",
+      "target": "prune_score_low_signal"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "run_meta_json",
+      "target": "prune_score_obsoletion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "minhash_lsh",
+      "target": "jaccard_similarity"
     },
     {
       "relation": "rationale_for",
@@ -4458,6 +4847,134 @@
       "source_file": "02-fractal-memory-proposal.md",
       "source": "fractal_memory_proposal",
       "target": "coherence_score"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "fractal_memory_proposal",
+      "target": "unified_plan"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "temperature_system",
+      "target": "heattracker"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "brain_meta_json",
+      "target": "heattracker"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "six_phase_roadmap",
+      "target": "heattracker"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "phase3a",
+      "target": "heattracker"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "archetypes",
+      "target": "minhash_lsh"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "six_phase_roadmap",
+      "target": "archetypes"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "brain_meta_json",
+      "target": "archetypes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "fractal_compression",
+      "target": "graph_summarization"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "fractal_compression",
+      "target": "coherence_score"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "fractal_node_schema",
+      "target": "fractal_compression"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "fractal_compression",
+      "target": "compression_state"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "six_phase_roadmap",
+      "target": "fractal_compression"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "02-fractal-memory-proposal.md",
+      "source": "weisfeiler_lehman",
+      "target": "subgraph_isomorphism_vf2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "six_phase_roadmap",
+      "target": "weisfeiler_lehman"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03-unified-plan.md",
+      "source": "run_meta_json",
+      "target": "temperature_system"
     },
     {
       "relation": "references",
@@ -4511,105 +5028,9 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "pruning_system",
-      "target": "prune_score_staleness"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "pruning_system",
-      "target": "prune_score_redundancy"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "pruning_system",
-      "target": "prune_score_low_signal"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "pruning_system",
-      "target": "prune_score_obsoletion"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "pruning_system",
-      "target": "pinning"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "pruning_system",
-      "target": "memory_prune_command"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "cache_eviction_lru",
-      "target": "pruning_system"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "six_phase_roadmap",
-      "target": "pruning_system"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "graph_centrality",
-      "target": "pruning_system"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "TUTORIAL.md",
-      "source": "pinning",
-      "target": "memory_pin_command"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "TUTORIAL.md",
-      "source": "pinning",
-      "target": "memory_unpin_command"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "memory-system-improvement-handoff.md",
-      "source": "non_negotiable_invariants",
-      "target": "pinning"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "run_meta_json",
-      "target": "pinning"
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "run_level_storage"
     },
     {
       "relation": "references",
@@ -4639,190 +5060,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "temperature_system",
-      "target": "heattracker"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "brain_meta_json",
-      "target": "heattracker"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PHASE3A_USER_TESTS.md",
-      "source": "phase3a",
-      "target": "heattracker"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "heattracker"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "six_phase_roadmap",
-      "target": "heattracker"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "archetypes",
-      "target": "minhash_lsh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "six_phase_roadmap",
-      "target": "archetypes"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "brain_meta_json",
-      "target": "archetypes"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "fractal_compression",
-      "target": "graph_summarization"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "fractal_compression",
-      "target": "compression_state"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "fractal_compression",
-      "target": "coherence_score"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "six_phase_roadmap",
-      "target": "fractal_compression"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "fractal_node_schema",
-      "target": "fractal_compression"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "weisfeiler_lehman",
-      "target": "subgraph_isomorphism_vf2"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "six_phase_roadmap",
-      "target": "weisfeiler_lehman"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "minhash_lsh",
-      "target": "jaccard_similarity"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "ebbinghaus_forgetting",
-      "target": "prune_score_staleness"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "02-fractal-memory-proposal.md",
-      "source": "arc_cache",
-      "target": "cache_eviction_lru"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "skills/graphify/SKILL.md",
-      "source": "graph_centrality",
-      "target": "god_nodes"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PHASE3A_USER_TESTS.md",
-      "source": "phase3a",
-      "target": "non_negotiable_invariants"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PHASE3A_USER_TESTS.md",
-      "source": "phase3a",
-      "target": "verification_gates"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PHASE3A_USER_TESTS.md",
-      "source": "user_test_checklist",
-      "target": "phase3a"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "memory-system-improvement-handoff.md",
-      "source": "verifier_aware_memory",
-      "target": "run_meta_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "03-unified-plan.md",
       "source": "run_meta_json",
       "target": "run_id"
@@ -4833,47 +5070,15 @@
       "confidence_score": 1.0,
       "source_file": "03-unified-plan.md",
       "source": "run_meta_json",
-      "target": "prune_score_staleness"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "run_meta_json",
-      "target": "prune_score_redundancy"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "run_meta_json",
-      "target": "prune_score_low_signal"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "run_meta_json",
-      "target": "prune_score_obsoletion"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "run_meta_json",
-      "target": "temperature_system"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03-unified-plan.md",
-      "source": "run_meta_json",
       "target": "compression_state"
+    },
+    {
+      "relation": "stored_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "verifier_aware_memory",
+      "target": "run_meta_json"
     },
     {
       "relation": "references",
@@ -4900,20 +5105,20 @@
       "target": "archive_directory"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
       "source_file": "TUTORIAL.md",
-      "source": "obsidian_vault",
-      "target": "memory_wiki_commands"
+      "source": "project_slug",
+      "target": "run_id"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "obsidian_vault",
-      "target": "knowledge_graph"
+      "source_file": "memory-system-improvement-handoff.md",
+      "source": "archive_grace_period",
+      "target": "non_negotiable_invariants"
     },
     {
       "relation": "references",
@@ -4930,14 +5135,6 @@
       "source_file": "memory-system-improvement-handoff.md",
       "source": "context_injection",
       "target": "memory_load_command"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "context_injection"
     },
     {
       "relation": "references",
@@ -4959,33 +5156,105 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "memory-system-improvement-handoff.md",
-      "source": "archive_grace_period",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "phase3a",
       "target": "non_negotiable_invariants"
     },
     {
-      "relation": "implements",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "phase3a",
+      "target": "verification_gates"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASE3A_USER_TESTS.md",
+      "source": "user_test_checklist",
+      "target": "phase3a"
+    },
+    {
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "pi_coding_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "knowledge_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "graphify_brain",
       "target": "memory_save_command"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "TUTORIAL.md",
-      "source": "memory_save_command",
-      "target": "graphify_out_directory"
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "memory_list_command"
     },
     {
-      "relation": "implements",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
+      "source_file": "README.md",
+      "source": "graphify_brain",
       "target": "memory_load_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "memory_gc_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "memory_wiki_commands"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "graphify_brain",
+      "target": "obsidian_vault"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "obsidian_vault",
+      "target": "knowledge_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md",
+      "source": "obsidian_vault",
+      "target": "memory_wiki_commands"
     },
     {
       "relation": "references",
@@ -4996,68 +5265,52 @@
       "target": "graph_report_md"
     },
     {
-      "relation": "implements",
+      "relation": "stored_in",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_list_command"
+      "source_file": "skills/graphify/SKILL.md",
+      "source": "knowledge_graph",
+      "target": "graph_report_md"
     },
     {
-      "relation": "implements",
+      "relation": "contains",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_runs_command"
+      "source_file": "skills/graphify/SKILL.md",
+      "source": "graphify_out_directory",
+      "target": "graph_report_md"
     },
     {
-      "relation": "implements",
+      "relation": "stored_in",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_prune_command"
+      "source_file": "skills/graphify/SKILL.md",
+      "source": "knowledge_graph",
+      "target": "graph_json"
     },
     {
-      "relation": "implements",
+      "relation": "contains",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_stats_command"
+      "source_file": "skills/graphify/SKILL.md",
+      "source": "graphify_out_directory",
+      "target": "graph_json"
     },
     {
-      "relation": "implements",
+      "relation": "contains",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_pin_command"
+      "source_file": "skills/graphify/SKILL.md",
+      "source": "graphify_out_directory",
+      "target": "graph_html"
     },
     {
-      "relation": "implements",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_unpin_command"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_gc_command"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "extensions/graphify.ts",
-      "source": "graphify_extensions",
-      "target": "memory_keep_command"
+      "source_file": "TUTORIAL.md",
+      "source": "memory_save_command",
+      "target": "graphify_out_directory"
     },
     {
       "relation": "references",
@@ -5132,22 +5385,6 @@
       "target": "graphify_python_package"
     },
     {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "skills/graphify/SKILL.md",
-      "source": "knowledge_graph",
-      "target": "graph_json"
-    },
-    {
-      "relation": "stored_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "skills/graphify/SKILL.md",
-      "source": "knowledge_graph",
-      "target": "graph_report_md"
-    },
-    {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
@@ -5180,70 +5417,6 @@
       "target": "extracted_edges"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "skills/graphify/SKILL.md",
-      "source": "graphify_out_directory",
-      "target": "graph_report_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "skills/graphify/SKILL.md",
-      "source": "graphify_out_directory",
-      "target": "graph_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "skills/graphify/SKILL.md",
-      "source": "graphify_out_directory",
-      "target": "graph_html"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "03-unified-plan.md",
-      "source": "temperature_system",
-      "target": "prune_score_staleness"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "TUTORIAL.md",
-      "source": "project_slug",
-      "target": "run_id"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "extensions/git-checkpoint.ts",
-      "source": "git_checkpoint_extension",
-      "target": "graphify_extensions"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "test/graphify-test-bundle.js",
-      "source": "graphify_test_bundle",
-      "target": "graphify_extensions"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "01-tree-memory-proposal.md",
-      "source": "jaccard_similarity",
-      "target": "prune_score_redundancy"
-    },
-    {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -5258,30 +5431,414 @@
       "source_file": "skills/graphify/SKILL.md",
       "source": "graphify_python_package",
       "target": "semantic_extraction"
+    },
+    {
+      "relation": "introduces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "weight": 1.0,
+      "source": "wiki_index",
+      "target": "wiki_overview"
+    },
+    {
+      "relation": "introduces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "weight": 1.0,
+      "source": "wiki_index",
+      "target": "wiki_architecture"
+    },
+    {
+      "relation": "introduces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "weight": 1.0,
+      "source": "wiki_index",
+      "target": "wiki_glossary"
+    },
+    {
+      "relation": "introduces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "weight": 1.0,
+      "source": "wiki_index",
+      "target": "wiki_layers_index"
+    },
+    {
+      "relation": "introduces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "weight": 1.0,
+      "source": "wiki_index",
+      "target": "wiki_communities_index"
+    },
+    {
+      "relation": "introduces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "weight": 1.0,
+      "source": "wiki_index",
+      "target": "wiki_decisions_index"
+    },
+    {
+      "relation": "introduces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md",
+      "weight": 1.0,
+      "source": "wiki_index",
+      "target": "wiki_llm_index"
+    },
+    {
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki",
+      "weight": 1.0,
+      "source": "wiki_system_concept",
+      "target": "wiki_index"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_layers_index",
+      "target": "wiki_layer_storage"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_layers_index",
+      "target": "wiki_layer_scoring"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_layers_index",
+      "target": "wiki_layer_temperature"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_layers_index",
+      "target": "wiki_layer_compression"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_layers_index",
+      "target": "wiki_layer_archetypes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_01_Storage.md",
+      "weight": 1.0,
+      "source": "wiki_layer_storage",
+      "target": "wiki_community_architecture"
+    },
+    {
+      "relation": "justifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_tree_plus_graph.md",
+      "weight": 1.0,
+      "source": "wiki_decision_tree_plus_graph",
+      "target": "wiki_layer_storage"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_02_Scoring.md",
+      "weight": 1.0,
+      "source": "wiki_layer_scoring",
+      "target": "wiki_layer_storage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_02_Scoring.md",
+      "weight": 1.0,
+      "source": "wiki_layer_scoring",
+      "target": "wiki_community_pruning"
+    },
+    {
+      "relation": "justifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_5_signal_prune.md",
+      "weight": 1.0,
+      "source": "wiki_decision_5_signal_prune",
+      "target": "wiki_layer_scoring"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_03_Temperature.md",
+      "weight": 1.0,
+      "source": "wiki_layer_temperature",
+      "target": "wiki_layer_scoring"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_03_Temperature.md",
+      "weight": 1.0,
+      "source": "wiki_layer_temperature",
+      "target": "wiki_community_pruning"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_03_Temperature.md",
+      "weight": 1.0,
+      "source": "wiki_layer_temperature",
+      "target": "wiki_community_heattracker"
+    },
+    {
+      "relation": "justifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_temperature_over_lru.md",
+      "weight": 1.0,
+      "source": "wiki_decision_temperature_over_lru",
+      "target": "wiki_layer_temperature"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_04_Compression.md",
+      "weight": 1.0,
+      "source": "wiki_layer_compression",
+      "target": "wiki_layer_temperature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_04_Compression.md",
+      "weight": 1.0,
+      "source": "wiki_layer_compression",
+      "target": "wiki_community_design"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_04_Compression.md",
+      "weight": 1.0,
+      "source": "wiki_layer_compression",
+      "target": "wiki_community_graphify"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_05_Archetypes.md",
+      "weight": 1.0,
+      "source": "wiki_layer_archetypes",
+      "target": "wiki_layer_compression"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/02_SYSTEM_LAYERS/LAYER_05_Archetypes.md",
+      "weight": 1.0,
+      "source": "wiki_layer_archetypes",
+      "target": "wiki_community_design"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_implementations"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_testing"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_architecture"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_pruning"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_heattracker"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_design"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_graphify"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/03_COMMUNITY_NARRATIVES/_README.md",
+      "weight": 1.0,
+      "source": "wiki_communities_index",
+      "target": "wiki_community_obsidian"
+    },
+    {
+      "relation": "justifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/DECISION_obsidian_viewer.md",
+      "weight": 1.0,
+      "source": "wiki_decision_obsidian_viewer",
+      "target": "wiki_community_obsidian"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_decisions_index",
+      "target": "wiki_decision_tree_plus_graph"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_decisions_index",
+      "target": "wiki_decision_30_day_archive"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_decisions_index",
+      "target": "wiki_decision_5_signal_prune"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_decisions_index",
+      "target": "wiki_decision_temperature_over_lru"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/04_DECISIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_decisions_index",
+      "target": "wiki_decision_obsidian_viewer"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_llm_index",
+      "target": "wiki_llm_templates"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_llm_index",
+      "target": "wiki_llm_setup"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_llm_index",
+      "target": "wiki_llm_review"
+    },
+    {
+      "relation": "lists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/05_LLM_INSTRUCTIONS/_README.md",
+      "weight": 1.0,
+      "source": "wiki_llm_index",
+      "target": "wiki_llm_feature"
     }
   ],
   "hyperedges": [
-    {
-      "id": "memory_command_set",
-      "label": "Complete /memory Command Set",
-      "nodes": [
-        "memory_save_command",
-        "memory_load_command",
-        "memory_list_command",
-        "memory_runs_command",
-        "memory_prune_command",
-        "memory_stats_command",
-        "memory_pin_command",
-        "memory_unpin_command",
-        "memory_gc_command",
-        "memory_keep_command",
-        "memory_wiki_commands"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "TUTORIAL.md"
-    },
     {
       "id": "prune_score_system",
       "label": "Prune Score Composite System",
@@ -5312,7 +5869,46 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "03-unified-plan.md"
+    },
+    {
+      "id": "memory_command_set",
+      "label": "Complete /memory Command Set",
+      "nodes": [
+        "memory_save_command",
+        "memory_load_command",
+        "memory_list_command",
+        "memory_runs_command",
+        "memory_prune_command",
+        "memory_stats_command",
+        "memory_pin_command",
+        "memory_unpin_command",
+        "memory_gc_command",
+        "memory_keep_command",
+        "memory_wiki_commands"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TUTORIAL.md"
+    },
+    {
+      "id": "wiki_documentation_system",
+      "label": "Complete Wiki Documentation System",
+      "nodes": [
+        "wiki_index",
+        "wiki_overview",
+        "wiki_architecture",
+        "wiki_glossary",
+        "wiki_layers_index",
+        "wiki_communities_index",
+        "wiki_decisions_index",
+        "wiki_llm_index"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/_INDEX.md"
     }
   ],
-  "built_at_commit": "e609f65d42251ec2b41d9e037a7892b792558df5"
+  "built_at_commit": "fce3330cecb2f0d6f96dcd336eefb466b109e032"
 }
